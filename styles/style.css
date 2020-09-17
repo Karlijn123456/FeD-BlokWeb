@@ -1,5 +1,53 @@
 /* CSS Document */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
+body {
+  background-color: lightblue;
+  margin: 0;
+}
+
+/* Every image will have the same width as it's container*/
+img {
+  max-width: 100%;
+}
+
+/* Header, Navigation bar */
+header {
+  display: flex;
+  background-color: #002333;
+  height: 64px;
+  max-width: 100%;
+  justify-content: space-between;
+}
+
+/* Logo in header */
+header img {
+  height: 36px;
+  width: 72px;
+}
+
+/* link of sign in button in the header */
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+section:first-of-type {
+  margin: 0;
+  background-image: url("../images/headerimage.png");
+  background-position: left;
+  height: 450px;
+  position: relative;
+}
+
+section:first-of-type h1 {
+  color: white;
+}
+
+section:nth-of-type(2) {
+  background-color: #f4f4f4;
+}

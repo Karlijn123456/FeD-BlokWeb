@@ -8,7 +8,7 @@ Mijn [Codepen](https://codepen.io/Karlijn12345/pen/oNxdaEP)
 
 1. https://www.squarespace.com
 2. https://www.skillshare.com/
-3. 
+3.
 
 ## Eindgesprek (week 7/8)
 
@@ -30,7 +30,7 @@ Mijn [Codepen](https://codepen.io/Karlijn12345/pen/oNxdaEP)
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Ik had al een tijdje niet meer gecodeerd, dus HTML oppakken was in het begin weer even wennen. Een aantal dingen waren al een beetje bij mij weggezakt. De content in HTML schrijven was nog te doen. Hier en daar zullen werkende wijs nog classes toegevoegd moeten worden en eventuele containers. De echte uitdaging zit hem straks in het alles netjes opmaken in CSS.
 
 **Screenshot(s):**
 
@@ -38,7 +38,11 @@ Mijn [Codepen](https://codepen.io/Karlijn12345/pen/oNxdaEP)
 
 ### Agenda voor meeting
 
--samen met je groepje opstellen-
+De meeting hebben wij een uur voor het voortgangsgesprek. We hadden een erge drukke week, op donderdag hadden wij zelfs les van 9:20 tot 18:40, waardoor we niet eerder tijd hadden om af te spreken. Wanneer we een agenda hebben gemaakt, zal ik die hier plaatsen.
+
+Mijn vraag(en):
+
+- Hoe positioneer ik een afbeelding in een hero in zo'n geval dat de hoeken niet uitlijnen met de container maar er verder buiten vallen, van het scherm af?
 
 ### Verslag van meeting
 
@@ -52,23 +56,36 @@ Mijn [Codepen](https://codepen.io/Karlijn12345/pen/oNxdaEP)
 
 **Je opdracht:** Ik zal voor deze opdracht de website van [Squarespace](https://www.squarespace.com) gaan namaken. Dit voelt voor mij als een uitdaging waar ik het meest van kan leren. Ik zal beginnen met de website statisch te coderen voor mobile device en ten slotte, als ik tijd over heb, zal ik micro-interacties met JavaScipt gaan toepassen.
 
-Ik heb er toch uiteindelijk voor gekozen om de website van [Skillshare](https://www.skillshare.com/) te gaan coderen. 
+Ik heb er toch uiteindelijk voor gekozen om de website van [Skillshare](https://www.skillshare.com/) te gebruiken voor deze opdracht. Tijdens het coderen kwam ik er toch achter dat de website van Squarespace net een te grote uitdaging is voor mij. Ik zie meer potentie in de website van Skillshare. Wel lijkt het me een leuke uitdaging om alsnog de website van Squarespace ooit ergens in mijn vrije tijd te gaan coderen, als mijn vaardigheden wat verder ontwikkelt zijn. Omdat ik wat laat heb geswitched van website, heb ik helaas nog niet zoveel kunnen coderen als ik had gewild.
 
 **Screenshot(s):**
-Mobiele website screenshots:
+Mobiele website Squarespace screenshots:
 
-- ![screenshot_1](images/screenshot1.png)
-- ![screenshot_2](images/screenshot2.png)
-- ![screenshot_3](images/screenshot3.png)
-- ![screenshot_4](images/screenshot4.png)
+![screenshot_1](images/screenshot1.png)
+![screenshot_2](images/screenshot2.png)
+![screenshot_3](images/screenshot3.png)
+![screenshot_4](images/screenshot4.png)
 
-Desktop website screenshots:
+Desktop website Squarespace screenshots:
 
-- ![screenshot_5](images/screenshot5.png)
-- ![screenshot_6](images/screenshot6.png)
-- ![screenshot_7](images/screenshot7.png)
+![screenshot_5](images/screenshot5.png)
+![screenshot_6](images/screenshot6.png)
+![screenshot_7](images/screenshot7.png)
+
+Mobiele website Squarespace screenshots:
+![screenshot_8](images/screenshot8.png)
+![screenshot_9](images/screenshot9.png)
+![screenshot_10](images/screenshot10.png)
+
+Desktop website Squarespace screenshots:
+![screenshot_11](images/screenshot11.png)
+![screenshot_12](images/screenshot12.png)
+![screenshot_13](images/screenshot13.png)
 
 **Breakdown-schets(en):**
 
-***Breakdownschets*** van de mobiele home pagina van Squarespace:
+###Breakdownschets van de mobiele home pagina van Squarespace:###
 ![breakdown schets](images/breakdownschets.png)
+
+###Breakdownschets van de mobiele home pagina van Skillshare:###
+![nieuwebreakdownschets](images/breakdownschetsskillsharekarlijnnijland.png)
