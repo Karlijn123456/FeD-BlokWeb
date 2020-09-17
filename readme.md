@@ -4,7 +4,7 @@
 
 ## Bronnenlijst
 
-Mijn Codepen: https://codepen.io/Karlijn12345/pen/oNxdaEP
+Mijn [Codepen](https://codepen.io/Karlijn12345/pen/oNxdaEP)
 
 1. https://www.squarespace.com
 2. https://www.skillshare.com/
@@ -50,7 +50,7 @@ Mijn Codepen: https://codepen.io/Karlijn12345/pen/oNxdaEP
 
 **Je focus:** Mijn focus zal gaan liggen op de responsive design van mijn website, omdat dit iets is wat ik nog niet onder de knie heb en graag zou willen leren. Ik wil mij namelijk focussen op het beter worden in goed en toegankelijk coderen. Als ik een extra uitdaging nodig blijk te hebben, dan kan ik er nog voor kiezen om ook nog aandacht te geven aan de surface laag, maar dit hangt echt af van hoe snel of niet snel ik leer mijn website responsive te maken. Als ik merk dat ik vastloop met responsive design, zelfs na hulp te hebben gevraagd, dan zal ik mijn focus verplaatsen naar de surface laag.
 
-**Je opdracht:** Ik zal voor deze opdracht de website van https://www.squarespace.com gaan namaken. Dit voelt voor mij als een uitdaging waar ik het meest van kan leren. Ik zal beginnen met de website statisch te coderen voor mobile device en ten slotte, als ik tijd over heb, zal ik micro-interacties met JavaScipt gaan toepassen.
+**Je opdracht:** Ik zal voor deze opdracht de website van [Squarespace](https://www.squarespace.com) gaan namaken. Dit voelt voor mij als een uitdaging waar ik het meest van kan leren. Ik zal beginnen met de website statisch te coderen voor mobile device en ten slotte, als ik tijd over heb, zal ik micro-interacties met JavaScipt gaan toepassen.
 
 Ik heb er toch uiteindelijk voor gekozen om de website van [Skillshare](https://www.skillshare.com/) te gaan coderen. 
 
