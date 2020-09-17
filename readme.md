@@ -30,11 +30,13 @@ Mijn [Codepen](https://codepen.io/Karlijn12345/pen/oNxdaEP)
 
 ### Stand van zaken
 
-Ik had al een tijdje niet meer gecodeerd, dus HTML oppakken was in het begin weer even wennen. Een aantal dingen waren al een beetje bij mij weggezakt. De content in HTML schrijven was nog te doen. Hier en daar zullen werkende wijs nog classes toegevoegd moeten worden en eventuele containers. De echte uitdaging zit hem straks in het alles netjes opmaken in CSS.
+Ik had al een tijdje niet meer gecodeerd, dus HTML oppakken was in het begin weer even wennen. Een aantal dingen waren al een beetje bij mij weggezakt. De content in HTML schrijven was nog te doen. Hier en daar zullen er werkende wijs nog classes toegevoegd moeten worden en eventuele containers. De echte uitdaging zit hem straks in het alles netjes opmaken in CSS.
 
 **Screenshot(s):**
 
--screenshot(s) van hoe ver je bent-
+![screenshot_14](images/screenshot14.png)
+![screenshot_15](images/screenshot15.png)
+![screenshot_16](images/screenshot16.png)
 
 ### Agenda voor meeting
 
