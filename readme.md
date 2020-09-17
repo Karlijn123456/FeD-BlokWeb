@@ -70,5 +70,5 @@ Desktop website screenshots:
 
 **Breakdown-schets(en):**
 
-Breakdownschets van de mobiele home pagina van Squarespace:
+***Breakdownschets*** van de mobiele home pagina van Squarespace:
 ![breakdown schets](images/breakdownschets.png)
