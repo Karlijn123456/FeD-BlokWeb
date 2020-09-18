@@ -10,32 +10,72 @@ body {
   margin: 0;
 }
 
+@font-face {
+  font-family: "GTWalsheim";
+  src: url("../fonts/GTWalsheimPro-Regular.ttf") format("ttf"),
+    url("../fonts/GTWalsheimPro-Regular.woff") format("woff"),
+    url("../fonts/GTWalsheimPro-Regular.woff2") format("woff2");
+  font-weight: 500;
+}
+
+/*Every used font*/
+@font-face {
+  font-family: "GTWalsheim";
+  src: url("../fonts/GTWalsheimPro-Bold.ttf") format("ttf"),
+    url("../fonts/GTWalsheimPro-Bold.woff") format("woff"),
+    url("../fonts/GTWalsheimPro-Bold.woff2") format("woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "GTWalsheim";
+  src: url("../fonts/GTWalsheimPro-Black.ttf") format("ttf"),
+    url("../fonts/GTWalsheimPro-Black.woff") format("woff"),
+    url("../fonts/GTWalsheimPro-Black.woff2") format("woff2");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Cormorant";
+  src: url("../fonts/cormorant.medium.otf") format("otf");
+  font-weight: 600;
+}
+
 /* Every image will have the same width as it's container*/
 img {
   max-width: 100%;
 }
 
-/* Header, Navigation bar */
-header {
+/* Navigation bar in header */
+nav {
   display: flex;
   background-color: #002333;
   height: 64px;
   max-width: 100%;
   justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 
 /* Logo in header */
-header img {
+nav a img {
   height: 36px;
   width: 72px;
 }
 
 /* link of sign in button in the header */
-header a {
+nav a:nth-of-type(2) {
   text-decoration: none;
   color: white;
+  font-family: "GTWalsheim", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  border: 1px solid white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
 }
 
+/* First section -> Hero */
 section:first-of-type {
   margin: 0;
   background-image: url("../images/headerimage.png");
@@ -45,11 +85,58 @@ section:first-of-type {
   position: relative;
 }
 
+/* Overlay on top of the first section to make the hero more readable and to
+align items in the middle*/
+section:first-of-type div {
+  background: rgba(0, 0, 0, 0.4);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 2rem;
+}
+
+/* Header in the first section*/
 section:first-of-type h1 {
   color: white;
   margin: 0;
+  font-family: "Cormorant";
+  font-size: 48px;
 }
 
+section:first-of-type span {
+  color: #08fe84;
+}
+
+/* Second header in the first section */
+section:first-of-type h2 {
+  font-family: "GTWalsheim", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: white;
+}
+
+/* Green button to get started for free in the first section */
+section:first-of-type a {
+  font-size: 22px;
+  background-color: #08fe84;
+  text-decoration: none;
+  color: black;
+  font-family: "GTWalsheim", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  height: 52px;
+  line-height: 50px;
+  border-radius: 4px;
+}
+
+/* Second section */
 section:nth-of-type(2) {
+  margin: 0;
   background-color: #f4f4f4;
+}
+
+/* Header in second section */
+section:nth-of-type(2) h1 {
+  margin: 0;
 }
