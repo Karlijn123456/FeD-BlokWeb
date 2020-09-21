@@ -40,16 +40,11 @@ Ik had al een tijdje niet meer gecodeerd, dus HTML oppakken was in het begin wee
 
 ### Agenda voor meeting
 
-- Divjes, wanneer wel en wanneer niet. 
-- Hoe moet je een hamburgermenu maken
-- Hamburger menu, logo en nog een item in nav bar, die wel in een <ul> of niet?
-- Mobile version eerste 4 items zichtbaar en de rest valt onder meer en op desktop versie zie je alle onderwerpen in de nav bar. Hoe codeer je dit? 
-- Positionering (Akshay)
+De meeting hebben wij een uur voor het voortgangsgesprek. We hadden een erge drukke week, op donderdag hadden wij zelfs les van 9:20 tot 18:40, waardoor we niet eerder tijd hadden om af te spreken. Wanneer we een agenda hebben gemaakt, zal ik die hier plaatsen.
 
 Mijn vraag(en):
 
 - Hoe positioneer ik een afbeelding in een hero in zo'n geval dat de hoeken niet uitlijnen met de container maar er verder buiten vallen, van het scherm af?
-- Karlijn: Logo in header staat niet in het midden
 
 ### Verslag van meeting
 
