@@ -40,24 +40,15 @@ Ik had al een tijdje niet meer gecodeerd, dus HTML oppakken was in het begin wee
 
 ### Agenda voor meeting
 
-Samen met mijn groepje zijn wij voor de les samen gekomen om een agenda op te stellen. We hebben elkaars vragen eerst proberen te antwoorden en de dingen waar we extra uitleg over wilden opgeschreven voor het voortgangsgesprek: 
+De meeting hebben wij een uur voor het voortgangsgesprek. We hadden een erge drukke week, op donderdag hadden wij zelfs les van 9:20 tot 18:40, waardoor we niet eerder tijd hadden om af te spreken. Wanneer we een agenda hebben gemaakt, zal ik die hier plaatsen.
 
-- Divjes, wanneer wel en wanneer niet?
-- Hoe moet je een hamburgermenu maken? 
-- Hamburger menu, logo en nog een item in nav bar, die wel in een <ul> of niet?
-- Mobile version eerste 4 items zichtbaar en de rest valt onder meer en op desktop versie zie je alle onderwerpen in de nav bar. Hoe codeer je dit? 
-- Positionering (Akshay)
-- Karlijn: Logo in header staat niet in het midden
+Mijn vraag(en):
 
-Daarnaast hebben we een planning gemaakt voor de aankomende week: 
-1. De dag na de les 19 septemeber 2020 begin maken met CSS.
-2. Vragen opstellen voor de studentenassistenten.
-3. Kijken of we al iets met Javascript kunnen doen?
-4. Huiswerk van andere medestudenten bekijken voor eventuele aanvulling van eigen proces.
+- Hoe positioneer ik een afbeelding in een hero in zo'n geval dat de hoeken niet uitlijnen met de container maar er verder buiten vallen, van het scherm af?
 
 ### Verslag van meeting
 
-Uit het voortgangsgesprek heb ik veel informatie kunnen halen. Zo weet ik nu wanneer ik wel en geen divjes moet gebruiken. Een div gebruik je voor opmaak, tenzij er andere elementen zijn die semantisch correct zijn, dan gebruik je die voor de opmaak. Daarnaast wist ik ongeveer al hoe je een hamburger menu moest maken. Ik ging er vanuit dat je dat net zoals de Humpty opdracht van vorige week moest doen en dat is correct. Ten slotte had ik een vraag over hoe ik mijn logo in het midden kon zetten. Ik had alles namelijk al met flexbox goed gezet. Ik had zelf ook al margin-left geprobeerd, maar ik wist niet of dit mocht, maar blijkbaar was dit alsnog correct :) 
+-na afloop snel uitkomsten vastleggen-
 
 ## Intake (week 1)
 

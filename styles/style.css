@@ -38,13 +38,22 @@ body {
 @font-face {
   font-family: "Cormorant";
   src: url("../fonts/cormorant.medium.otf") format("otf");
-  font-weight: 600;
+  font-weight: 400;
+}
+
+/* The main background color */
+main {
+  background-color: #f4f4f4;
 }
 
 /* Every image will have the same width as it's container*/
 img {
   max-width: 100%;
 }
+
+/*/////////////////////////*/
+/* HEADER */
+/*/////////////////////////*/
 
 /* Navigation bar in header */
 nav {
@@ -57,14 +66,26 @@ nav {
   padding: 1rem;
 }
 
+/* Magnifier icon in header */
+nav img:nth-of-type(2) {
+  margin-left: 0.75rem;
+}
+
 /* Logo in header */
 nav a img {
   height: 36px;
   width: 72px;
+  margin-left: 2.4rem;
+}
+
+/* Modifier logo for Skillshareclass.html page. This one has a margin-left: 0;
+otherwise the magnifying glass will push it aside */
+.header__logomodifier {
+  margin-left: 0;
 }
 
 /* link of sign in button in the header */
-nav a:nth-of-type(2) {
+.header__signinbutton {
   text-decoration: none;
   color: white;
   font-family: "GTWalsheim", sans-serif;
@@ -75,13 +96,27 @@ nav a:nth-of-type(2) {
   border-radius: 5px;
 }
 
+/* Modifier of Sign Up button in header */
+.header__greensignupbutton {
+  background-color: #06fa84;
+  color: black;
+  text-decoration: none;
+  font-family: "GTWalsheim", sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+/*/////////////////////////*/
+/* MAIN */
+/*/////////////////////////*/
+
 /* First section -> Hero */
 section:first-of-type {
-  margin: 0;
   background-image: url("../images/headerimage.png");
   background-size: cover;
-  background-position: -100px;
-  height: 450px;
+  height: 375px;
   position: relative;
 }
 
@@ -94,6 +129,7 @@ section:first-of-type div {
   flex-direction: column;
   text-align: center;
   padding: 2rem;
+  align-items: center;
 }
 
 /* Header in the first section*/
@@ -101,7 +137,9 @@ section:first-of-type h1 {
   color: white;
   margin: 0;
   font-family: "Cormorant";
-  font-size: 48px;
+  font-weight: 400;
+  font-size: 50px;
+  margin-top: 2rem;
 }
 
 section:first-of-type span {
@@ -114,6 +152,8 @@ section:first-of-type h2 {
   font-weight: 500;
   font-size: 18px;
   color: white;
+  line-height: 1.5rem;
+  padding: 0 1.5rem;
 }
 
 /* Green button to get started for free in the first section */
@@ -128,15 +168,166 @@ section:first-of-type a {
   height: 52px;
   line-height: 50px;
   border-radius: 4px;
+  width: 90%;
 }
 
 /* Second section */
 section:nth-of-type(2) {
-  margin: 0;
   background-color: #f4f4f4;
+  height: 600px;
+  color: #002333;
 }
 
 /* Header in second section */
 section:nth-of-type(2) h1 {
+  font-size: 36px;
+  font-family: "GTWalsheim", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 7.5rem;
+  line-height: 44px;
+}
+
+section:nth-of-type(2) ul {
   margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-size: 15px;
+  font-family: "GTWalsheim", sans-serif;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 2rem 2rem 2rem;
+}
+
+section:nth-of-type(2) li {
+  padding: 0.5rem;
+}
+
+section:nth-of-type(2) a {
+  text-decoration: none;
+}
+
+section:nth-of-type(2) ul span {
+  color: #3722d3;
+  border-bottom: 4px solid #3722d3;
+  padding-bottom: 4px;
+}
+
+section:nth-of-type(2) article {
+  position: relative;
+}
+
+section:nth-of-type(2) article img:first-of-type {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+section:nth-of-type(2) article img:nth-of-type(2) {
+}
+
+section:nth-of-type(3) {
+  background-image: url("../images/banner-item1.png");
+  height: 598px;
+  background-size: cover;
+  position: relative;
+}
+
+section:nth-of-type(3) div {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 1.875rem;
+  align-items: baseline;
+}
+
+section:nth-of-type(3) a:first-of-type {
+  text-decoration: none;
+  color: white;
+  font-family: "GTWalsheim", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+  margin: 1.5rem 0 1rem 0;
+}
+
+section:nth-of-type(3) p {
+  font-family: "GTWalsheim", sans-serif;
+  font-size: 18px;
+  color: white;
+  line-height: 24px;
+  margin: 0;
+}
+
+section:nth-of-type(3) a:nth-of-type(2) {
+  text-decoration: none;
+  background-color: #06fa84;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-top: 2rem;
+}
+
+section:nth-of-type(3) span {
+  color: #002333;
+  font-family: "GTWalsheim", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+section:nth-of-type(4) img {
+  margin: 6.75rem 0 1rem 3.25rem;
+  box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
+}
+
+section:nth-of-type(4) h1 {
+  font-size: 36px;
+  font-family: "GTWalsheim", sans-serif;
+  font-weight: 600;
+  line-height: 44px;
+  text-align: center;
+  color: #002333;
+}
+
+section:nth-of-type(4) hr {
+  background-color: #3722d3;
+  border-radius: 8px;
+  height: 8px;
+  width: 100px;
+  text-align: center;
+  margin: 1.5rem auto;
+}
+
+section:nth-of-type(4) p {
+  font-family: "GTWalsheim", sans-serif;
+  color: #002333;
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 0 1rem 0 1rem;
+}
+
+section:nth-of-type(4) a {
+  color: #3729d3;
+  border: 1px solid #3729d3;
+  text-decoration: none;
+  height: 40px;
+  margin-top: 2rem;
+  font-family: "GTWalsheim", sans-serif;
+  font-weight: 700;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+/* ///////////////////////////// */
+/* Skillshareclass.html pagina styling*/
+/* ///////////////////////////// */
+
+.skillsharepagina__section1 {
+  background-color: white;
 }
