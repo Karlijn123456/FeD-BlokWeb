@@ -324,6 +324,79 @@ section:nth-of-type(4) a {
   padding: 10px 20px;
   border-radius: 5px;
 }
+
+section:nth-of-type(5) {
+  background-color: #002333;
+}
+
+section:nth-of-type(5) h1 {
+  text-align: center;
+  color: white;
+  font-size: 36px;
+  line-height: 44px;
+  font-family: "GTWalsheim", sans-serif;
+  font-weight: 600;
+  padding-top: 6.875rem;
+}
+
+section:nth-of-type(5) hr {
+  height: 8px;
+  width: 100px;
+  background-color: #00ff84;
+  border-radius: 8px;
+  margin: 32px auto;
+  border: none;
+}
+
+section:nth-of-type(5) p {
+  color: white;
+  font-family: "GTWalsheim", sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  padding: 0 1rem 2rem 1rem;
+}
+
+section:nth-of-type(6) h1 {
+  font-size: 15px;
+  font-family: "GTWalsheim", sans-serif;
+  color: #002333;
+  font-weight: 600;
+  text-align: center;
+}
+section:nth-of-type(6) ul {
+  list-style: none;
+}
+
+section:nth-of-type(6) ul:first-of-type {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+  margin: 0 1rem;
+  font-family: "GTWalsheim", sans-serif;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+section:nth-of-type(6) ul:first-of-type li {
+  padding: 0.5rem;
+}
+
+section:nth-of-type(6) a {
+  text-decoration: none;
+  color: #002333;
+}
+
+section:nth-of-type(6) div {
+  display: flex;
+}
+
+section:nth-of-type(6) ul:nth-of-type(2) {
+  font-size: 15px;
+  font-family: "GTWalsheim", sans-serif;
+}
+
 /* ///////////////////////////// */
 /* Skillshareclass.html pagina styling*/
 /* ///////////////////////////// */

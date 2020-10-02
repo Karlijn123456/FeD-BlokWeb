@@ -24,7 +24,19 @@ Mijn [Codepen](https://codepen.io/Karlijn12345/pen/oNxdaEP)
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+### Stand van zaken
+
+De afgelopen twee weken ben ik bezig geweest met het opzetten van een tweede HTML pagina en het stijlen van de eerste HTML pagina. Dit gaat al aardig goed. Hier en daar zijn er wat dingetjes die ik lastig vind, maar Google en vragen stellen helpen enorm. De volgende grote uitdaging wordt om een carousel te gaan maken met JavaScript. Gelukkig zijn er ook boordevol tutorials hierover op Youtube te vinden.
+
+### Agenda voor meeting
+
+Ik ga een aantal vragen aan de student assitent vragen. Vooral over wat de beste manier is hoe ik mijn tweede HTML pagina kan stijlen aangezien ik voor mijn eerste HTML pagina alle elementen heb aan geshreven met first-of-type, nth-of-type, etc. en hierdoor de stijling ook wordt overgenomen door de HTML elementen op de tweede HTML pagina.
+
+Daarnaast zijn er een aantal simpele dingetjes waar ik tegen aan loop. Zoals een knop die niet doet wat ik wil en een afbeelding die ik niet goed geplaatst krijg, etc.
+
+**Screenshot(s):**
+
+![screenshot_18](images/screenshot18.png)
 
 ## Voortgang 1 (week 3)
 
