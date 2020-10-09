@@ -1,15 +1,3 @@
-/* CSS Document */
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: lightblue;
-  margin: 0;
-}
-
 @font-face {
   font-family: "GTWalsheim";
   src: url("../fonts/GTWalsheimPro-Regular.ttf") format("ttf"),
@@ -41,6 +29,20 @@ body {
   font-weight: 400;
 }
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "GTWalsheim", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
 /* The main background color */
 main {
   background-color: #f4f4f4;
@@ -49,6 +51,27 @@ main {
 /* Every image will have the same width as it's container*/
 img {
   max-width: 100%;
+}
+
+/* Styling for h1 elements */
+.title__h1 {
+  font-size: 2.25rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 1.25rem;
+  margin-top: 0;
+  line-height: 2.75rem;
+}
+
+/* Styling for h2 elements */
+.title__h2 {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.title__footer {
+  font-size: 1.125rem;
+  font-weight: 500;
 }
 
 /*/////////////////////////*/
@@ -66,6 +89,11 @@ nav {
   padding: 1rem;
 }
 
+nav button {
+  background: none;
+  border: none;
+}
+
 /* Magnifier icon in header */
 nav img:nth-of-type(2) {
   margin-left: 0.75rem;
@@ -80,15 +108,14 @@ nav a img {
 
 /* Modifier logo for Skillshareclass.html page. This one has a margin-left: 0;
 otherwise the magnifying glass will push it aside */
-.header__logomodifier {
+.header--logomodifier {
   margin-left: 0;
 }
 
 /* link of sign in button in the header */
-.header__signinbutton {
+.header__button {
   text-decoration: none;
   color: white;
-  font-family: "GTWalsheim", sans-serif;
   font-weight: 700;
   font-size: 14px;
   border: 1px solid white;
@@ -97,33 +124,57 @@ otherwise the magnifying glass will push it aside */
 }
 
 /* Modifier of Sign Up button in header */
-.header__greensignupbutton {
+.header__button--green {
   background-color: #06fa84;
   color: black;
-  text-decoration: none;
-  font-family: "GTWalsheim", sans-serif;
   font-weight: 600;
   font-size: 15px;
-  padding: 0.5rem 1rem;
-  border-radius: 5px;
+  border: none;
 }
 
 /*/////////////////////////*/
 /* MAIN */
 /*/////////////////////////*/
 
-/* First section -> Hero */
-section:first-of-type {
+/* Extendable Hamburgermenu */
+.hamburgermenu-section {
+  padding-bottom: 22.625rem;
+  padding-top: 1rem;
+  width: 100%;
+  font-weight: 600;
+  background-color: white;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  position: fixed;
+  transform: translateY(-100%);
+}
+
+.hamburgermenu-section.showmenu {
+  transform: translateY(0%);
+}
+
+.hamburgermenu-section ul {
+  list-style: none;
+}
+
+.hamburgermenu-section li {
+  padding: 0.75rem 0 1rem;
+  margin-left: -1.5rem;
+  border-bottom: 0.0625rem solid #dcdee1;
+}
+
+/* Section -> Hero */
+.hero-section {
   background-image: url("../images/headerimage.png");
   background-size: cover;
   height: 375px;
-  position: relative;
 }
 
 /* Overlay on top of the first section to make the hero more readable and to
 align items in the middle*/
-section:first-of-type div {
-  background: rgba(0, 0, 0, 0.4);
+.hero-section div {
+  background-color: rgba(0, 0, 0, 0.4);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -133,111 +184,158 @@ section:first-of-type div {
 }
 
 /* Header in the first section*/
-section:first-of-type h1 {
+.hero-section h1 {
   color: white;
   margin: 0;
-  font-family: "Cormorant";
+  font-family: "Cormorant", serif;
   font-weight: 400;
-  font-size: 50px;
+  font-size: 3.125rem;
   margin-top: 2rem;
 }
 
-section:first-of-type span {
+.hero-section span {
   color: #08fe84;
 }
 
 /* Second header in the first section */
-section:first-of-type h2 {
-  font-family: "GTWalsheim", sans-serif;
+.hero-section h2 {
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: white;
   line-height: 1.5rem;
   padding: 0 1.5rem;
 }
 
 /* Green button to get started for free in the first section */
-section:first-of-type a {
-  font-size: 22px;
+.hero-section a {
+  font-size: 1.375rem;
   background-color: #08fe84;
   text-decoration: none;
-  color: black;
-  font-family: "GTWalsheim", sans-serif;
+  color: #002333;
   font-weight: 600;
   text-align: center;
-  height: 52px;
-  line-height: 50px;
-  border-radius: 4px;
-  width: 90%;
+  border-radius: 0.25rem;
+  padding: 0.875rem 2rem;
+  line-height: 1.5rem;
+  margin-bottom: 2rem;
 }
 
 /* Second section */
-section:nth-of-type(2) {
+.fascinates-section {
   background-color: #f4f4f4;
-  height: 600px;
   color: #002333;
+  padding: 7.5rem 0 6.5rem;
 }
 
 /* Header in second section */
-section:nth-of-type(2) h1 {
-  font-size: 36px;
-  font-family: "GTWalsheim", sans-serif;
-  font-weight: 600;
-  text-align: center;
-  margin-bottom: 20px;
-  margin-top: 7.5rem;
-  line-height: 44px;
-}
-
-section:nth-of-type(2) ul {
+.categories-list {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  font-size: 15px;
-  font-family: "GTWalsheim", sans-serif;
+  font-size: 0.9375rem;
   font-weight: 600;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 2rem 2rem 2rem;
+  margin: 0 2rem 2rem;
 }
 
-section:nth-of-type(2) li {
+.categories-list li {
   padding: 0.5rem;
 }
 
-section:nth-of-type(2) a {
+.categories-list a {
   text-decoration: none;
+  color: #002333;
 }
 
-section:nth-of-type(2) ul span {
+.categories-list li.active a {
   color: #3722d3;
-  border-bottom: 4px solid #3722d3;
-  padding-bottom: 4px;
+  border-bottom: 0.25rem solid #3722d3;
+  padding-bottom: 0.25rem;
 }
 
-section:nth-of-type(2) article {
+.card-list-wrapper {
+  padding: 0 4rem;
+  overflow: hidden;
+}
+
+.card-list {
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.card-list li {
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 100%;
+  padding: 0 0.5rem;
+}
+
+.card-list article {
+  position: relative;
+  box-shadow: 0 2px 4px 0 rgba(184, 184, 184, 0.5);
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.card-list a {
+  text-decoration: none;
+  color: #002333;
+}
+
+.card-list__images {
   position: relative;
 }
 
-section:nth-of-type(2) article img:first-of-type {
+.card-list__images::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, transparent 50%);
+}
+
+.card-list article img:first-of-type {
   position: absolute;
   left: 0;
   top: 0;
+  padding: 0.5rem;
+  width: 5.5rem;
 }
 
-section:nth-of-type(2) article img:nth-of-type(2) {
+.card-list__content {
+  padding: 0.5rem;
 }
 
-section:nth-of-type(3) {
+.card-list h1 {
+  font-size: 0.9375rem;
+  text-align: center;
+  margin: 0 0 1.5rem;
+  font-weight: 600;
+}
+
+.card-list span {
+  text-align: center;
+  display: block;
+  text-align: center;
+}
+
+.explore-section {
   background-image: url("../images/banner-item1.png");
-  height: 598px;
+  padding: 30rem 0 8rem;
   background-size: cover;
   position: relative;
+  background-position: center center;
 }
 
-section:nth-of-type(3) div {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+.explore-section div {
+  background: rgba(0, 0, 0, 0.5);
   height: 100%;
   position: absolute;
   left: 0;
@@ -245,162 +343,382 @@ section:nth-of-type(3) div {
   display: flex;
   flex-direction: column;
   padding: 1.875rem;
-  align-items: baseline;
+  align-items: flex-start;
+  justify-content: center;
 }
 
-section:nth-of-type(3) a:first-of-type {
+.explore-section div > img {
+  width: 4.25rem;
+}
+
+.explore-section a:first-of-type {
   text-decoration: none;
   color: white;
-  font-family: "GTWalsheim", sans-serif;
+
   font-weight: 600;
-  font-size: 26px;
-  margin: 1.5rem 0 1rem 0;
+  font-size: 1.625rem;
+  margin: 1.5rem 0 1rem;
 }
 
-section:nth-of-type(3) p {
-  font-family: "GTWalsheim", sans-serif;
-  font-size: 18px;
+.explore-section p {
+  font-size: 1.125rem;
   color: white;
-  line-height: 24px;
+  line-height: 1.5rem;
   margin: 0;
 }
 
-section:nth-of-type(3) a:nth-of-type(2) {
+.explore-section a:nth-of-type(2) {
   text-decoration: none;
   background-color: #06fa84;
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.3125rem;
   margin-top: 2rem;
 }
 
-section:nth-of-type(3) span {
+.explore-section span {
   color: #002333;
-  font-family: "GTWalsheim", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 600;
 }
 
-section:nth-of-type(4) img {
-  margin: 6.75rem 0 1rem 3.25rem;
-  box-shadow: 12px 12px 25px rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
+.discover-section {
+  overflow: hidden;
 }
 
-section:nth-of-type(4) h1 {
-  font-size: 36px;
-  font-family: "GTWalsheim", sans-serif;
-  font-weight: 600;
-  line-height: 44px;
+.discover-section img {
+  margin: 10rem 0 3rem 3.25rem;
+  box-shadow: 0.75rem 0.75rem 1.5625rem rgba(0, 0, 0, 0.4);
+  border-radius: 0.3125rem;
+}
+
+.discover-section div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  color: #002333;
 }
 
-section:nth-of-type(4) hr {
+.discover-section hr {
   background-color: #3722d3;
-  border-radius: 8px;
-  height: 8px;
-  width: 100px;
-  text-align: center;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+  width: 6.25rem;
   margin: 1.5rem auto;
 }
 
-section:nth-of-type(4) p {
-  font-family: "GTWalsheim", sans-serif;
+.discover-section p {
   color: #002333;
-  text-align: center;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
   margin: 0 1rem 0 1rem;
 }
 
-section:nth-of-type(4) a {
+.discover-section a {
   color: #3729d3;
-  border: 1px solid #3729d3;
+  border: 0.0625rem solid #3729d3;
   text-decoration: none;
-  height: 40px;
+  height: 2.5rem;
   margin-top: 2rem;
-  font-family: "GTWalsheim", sans-serif;
-  font-weight: 700;
-  padding: 10px 20px;
-  border-radius: 5px;
+
+  font-weight: 600;
+  padding: 0.625rem 1.25rem;
+  border-radius: 0.3125rem;
+  margin-bottom: 4rem;
+  font-size: 1.125rem;
 }
 
-section:nth-of-type(5) {
+.creators-section {
   background-color: #002333;
 }
 
-section:nth-of-type(5) h1 {
-  text-align: center;
+.title__h1--white {
   color: white;
-  font-size: 36px;
-  line-height: 44px;
-  font-family: "GTWalsheim", sans-serif;
-  font-weight: 600;
   padding-top: 6.875rem;
 }
 
-section:nth-of-type(5) hr {
-  height: 8px;
-  width: 100px;
+.creators-section hr {
+  height: 0.5rem;
+  width: 6.25rem;
   background-color: #00ff84;
-  border-radius: 8px;
-  margin: 32px auto;
+  border-radius: 0.5rem;
+  margin: 2rem auto;
   border: none;
 }
 
-section:nth-of-type(5) p {
+.creators-section p {
   color: white;
-  font-family: "GTWalsheim", sans-serif;
-  font-size: 22px;
-  line-height: 28px;
+
+  font-size: 1.375rem;
+  line-height: 1.75rem;
   text-align: center;
-  padding: 0 1rem 2rem 1rem;
+  padding: 0 1rem 2rem;
 }
 
-section:nth-of-type(6) h1 {
-  font-size: 15px;
-  font-family: "GTWalsheim", sans-serif;
+/* Teacher Directory with alphabet and categories */
+.teacherdirectory-section h1 {
+  font-size: 0.9375rem;
   color: #002333;
   font-weight: 600;
   text-align: center;
 }
-section:nth-of-type(6) ul {
+
+/* Every list has no bullets*/
+.teacherdirectory-section ul {
   list-style: none;
 }
 
-section:nth-of-type(6) ul:first-of-type {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0;
-  margin: 0 1rem;
-  font-family: "GTWalsheim", sans-serif;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-
-section:nth-of-type(6) ul:first-of-type li {
-  padding: 0.5rem;
-}
-
-section:nth-of-type(6) a {
+/* All links */
+.teacherdirectory-section a {
   text-decoration: none;
   color: #002333;
 }
 
-section:nth-of-type(6) div {
+/* Alphabet links */
+.alphabet {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 1rem;
+  margin: 0 1rem;
 }
 
-section:nth-of-type(6) ul:nth-of-type(2) {
-  font-size: 15px;
-  font-family: "GTWalsheim", sans-serif;
+.alphabet li {
+  padding: 0.5rem;
+}
+
+/* links in alphabet have a different color (#3722d3) than the other links */
+.alphabet a {
+  text-decoration: none;
+  color: #3722d3;
+}
+
+.wrapper__categories {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -0.5rem; /*Dit kan anders*/
+  padding-bottom: 2rem;
+}
+
+.wrapper__categories ul span {
+  color: #3722d3;
+  font-weight: 600;
+}
+
+.wrapper__categories ul li {
+  padding-bottom: 0.625rem;
+}
+
+.wrapper__categories ul h2 {
+  margin-bottom: 0.5rem;
+}
+
+.list__lifestyle {
+  margin-left: -1.5rem;
+}
+
+.list__business {
+  margin-left: 1rem;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #002333;
+  padding-top: 2rem;
+}
+.wrapper__footer {
+  display: flex;
+  flex-wrap: wrap;
+  color: white;
+  padding-left: 2.5rem;
+  justify-content: space-between;
+}
+
+.wrapper__footer h1 {
+  padding-bottom: 1rem;
+}
+
+.wrapper__footer ul {
+  list-style: none;
+  padding: 0 1rem;
+  padding-right: 3rem;
+}
+
+.wrapper__footer ul li {
+  padding-bottom: 2rem;
+}
+
+/*Google Play and Google Appstore images */
+.wrapper__images {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper__images img {
+  width: 7.5rem;
+  border: 0.0625rem solid white;
+  border-radius: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.wrapper__images img:first-of-type {
+  margin-right: 2rem;
+}
+
+footer hr {
+  border-color: #00ff84;
+  width: 85%;
+}
+
+.wrapper__socials {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0.5rem 0 0;
+  padding: 0;
+}
+
+.wrapper__socials li {
+  padding: 0.25rem;
+}
+
+.wrapper__socials a {
+  padding-right: 1rem;
+  align-items: center;
+}
+
+.wrapper__lastfooteritems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding-bottom: 3.875rem;
+  margin-top: 1rem;
+  font-size: 0.9375rem;
+}
+
+.wrapper__lastfooteritems a {
+  color: white;
+  text-decoration: none;
+}
+
+.wrapper__lastfooteritems--links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.wrapper__lastfooteritems--links li {
+  padding: 0.75rem;
 }
 
 /* ///////////////////////////// */
 /* Skillshareclass.html pagina styling*/
 /* ///////////////////////////// */
 
-.skillsharepagina__section1 {
-  background-color: white;
+.video-section {
+  background-color: #002333;
+}
+
+.video-section video {
+  width: 100%;
+}
+
+.wrapper {
+  padding: 1rem 0 1rem 1rem;
+}
+
+.wrapper div {
+  display: flex;
+}
+
+.video-section img {
+  width: 3.5rem;
+}
+
+.video-section h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 1.375rem;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+.videosection div {
+  display: flex;
+  align-items: center;
+}
+
+.video-section a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 0.9375rem;
+}
+
+.dot {
+  border-radius: 50%;
+  background-color: #dcdee1;
+  height: 0.25rem;
+  width: 0.25rem;
+  margin: 0.5rem 0.3125rem;
+}
+
+.video-section span {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #00ff84;
+}
+
+.classdetails-section {
+  background: white;
+}
+
+.navigation-wrapper {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  padding: 0.5rem 0 0 0rem;
+  overflow-x: scroll;
+}
+
+.navigation-wrapper li {
+  font-weight: 600;
+  padding: 0 1rem;
+}
+
+.playlist-wrapper {
+  background-color: #002333;
+}
+
+.playlist {
+  margin: 0;
+  padding-bottom: 3.125rem;
+  color: white;
+  list-style: none;
+  padding-left: 0;
+}
+
+.playlist > p {
+  padding-left: 4.125rem;
+  padding-top: 2rem;
+}
+
+.wrapper-playlistitem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1rem;
+  margin: 0 1.5rem;
+}
+
+.wrapper-imageandtext {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper-imageandtext img {
+  padding-right: 1.375rem;
 }

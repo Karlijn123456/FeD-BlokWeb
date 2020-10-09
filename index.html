@@ -11,15 +11,16 @@
   </head>
 
   <body>
-    <script src="scripts/script.js"></script>
     <header>
       <nav>
-        <img src="images/hamburgericon.svg" alt="hamburger menu icon" />
+        <button class="hamburgericon" type="button">
+          <img src="images/hamburgericon.svg" alt="hamburger menu icon" />
+        </button>
         <a href="index.html" title="Skillshare logo">
           <img src="images/logo.svg" alt="Skillshare logo" />
         </a>
         <a
-          class="header__signinbutton"
+          class="header__button"
           href="https://www.skillshare.com/login"
           title="Button to sign in"
           >Sign In
@@ -28,7 +29,16 @@
     </header>
 
     <main>
-      <section>
+      <section class="hamburgermenu-section">
+        <ul>
+          <li>Home</li>
+          <li>Browse</li>
+          <li>Workshops</li>
+          <li>Student Projects</li>
+          <li>Go Premium</li>
+        </ul>
+      </section>
+      <section class="hero-section">
         <div>
           <h1>Explore your creativity<span>.</span></h1>
           <h2>Join Skillshare to watch, play, learn, make, and discover.</h2>
@@ -38,43 +48,83 @@
         </div>
       </section>
 
-      <section>
-        <h1>Find What <br />Fascinates You</h1>
-        <ul>
-          <li>
+      <section class="fascinates-section">
+        <h1 class="title__h1">Find What <br />Fascinates You</h1>
+        <ul class="categories-list">
+          <li class="active">
             <a href="https://wwww.skillshare.com">
-              <span>All Categories</span>
+              All Categories
             </a>
           </li>
-          <li>Animation</li>
-          <li>Design</li>
-          <li>Illustration</li>
-          <li>Lifestyle</li>
-          <li>Photo & Film</li>
-          <li>Business</li>
-          <li>Writing</li>
+          <li>
+            <a href="https://www.skillshare.com/animation"> Animation</a>
+          </li>
+          <li>
+            <a href="https://wwww.skillshare.com/design">Design</a>
+          </li>
+          <li>
+            <a href="https://wwww.skillshare.com/illustration">Illustration</a>
+          </li>
+          <li>
+            <a href="https://wwww.skillshare.com/lifestyle">Lifestyle</a>
+          </li>
+          <li>
+            <a href="https://wwww.skillshare.com/photo-film">Photo & Film</a>
+          </li>
+          <li>
+            <a href="https://wwww.skillshare.com/business">Business</a>
+          </li>
+          <li>
+            <a href="https://wwww.skillshare.com/writing">Writing</a>
+          </li>
         </ul>
-        <ul>
-          <article>
-            <a
-              href="https://www.skillshare.com/classes/Drawing-as-Self-Discovery-5-Ways-to-Start/831070146?via=homepage"
-            >
-              <img src="images/original.svg" alt="Original logo" />
-              <img
-                src="images/card1image.png"
-                alt="Drawing as Self-Discovery image"
-              />
-            </a>
-            <p>
-              <!-- Dit moet een H1 worden -->Drawing as Self-Discovery: 5 Ways
-              to Start
-            </p>
-            <p>Mari Andrew</p>
-          </article>
-        </ul>
+        <div class="card-list-wrapper">
+          <ul class="card-list">
+            <li>
+              <a href="skillshareclass.html">
+                <article>
+                  <div class="card-list__images">
+                    <img src="images/original.svg" alt="Original logo" />
+                    <img
+                      src="images/card1image.png"
+                      alt="Drawing as Self-Discovery image"
+                    />
+                  </div>
+                  <div class="card-list__content">
+                    <h1>
+                      Drawing as Self-Discovery: 5 Ways to Start
+                    </h1>
+                    <span>Mari Andrew</span>
+                  </div>
+                </article>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.skillshare.com/classes/Drawing-as-Self-Discovery-5-Ways-to-Start/831070146?via=homepage"
+              >
+                <article>
+                  <div class="card-list__images">
+                    <img src="images/original.svg" alt="Original logo" />
+                    <img
+                      src="images/card1image.png"
+                      alt="Drawing as Self-Discovery image"
+                    />
+                  </div>
+                  <div class="card-list__content">
+                    <h1>
+                      Drawing as Self-Discovery: 5 Ways to Start
+                    </h1>
+                    <span>Mari Andrew</span>
+                  </div>
+                </article>
+              </a>
+            </li>
+          </ul>
+        </div>
       </section>
 
-      <section>
+      <section class="explore-section">
         <div>
           <img src="images/original.svg" alt="original logo" />
           <a
@@ -99,26 +149,30 @@
         </div>
       </section>
 
-      <section>
+      <section class="discover-section">
         <img
           src="images/discoverimage.png"
           alt="Image of Skillshare class with video list"
         />
-        <h1>What Will You Discover?</h1>
-        <hr />
-        <p>
-          Explore new skills, deepen existing passions, and get lost in
-          creativity. What you find just might surprise and inspire you.
-        </p>
-        <a
-          href="https://www.skillshare.com/browse?via=homepage&sort=rating&time=all"
-        >
-          Browse Classes
-        </a>
+        <div>
+          <h1 class="title__h1">What Will You Discover?</h1>
+          <hr />
+          <p>
+            Explore new skills, deepen existing passions, and get lost in
+            creativity. What you find just might surprise and inspire you.
+          </p>
+          <a
+            href="https://www.skillshare.com/browse?via=homepage&sort=rating&time=all"
+          >
+            Browse Classes
+          </a>
+        </div>
       </section>
 
-      <section>
-        <h1>Classes Taught by Real Creators</h1>
+      <section class="creators-section">
+        <h1 class="title__h1 title__h1--white">
+          Classes Taught by Real Creators
+        </h1>
         <hr />
         <p>
           Skillshare teachers are icons, experts, and industry rock stars
@@ -136,9 +190,9 @@
         </article>
       </section>
 
-      <section>
+      <section class="teacherdirectory-section">
         <h1>Teacher Directory:</h1>
-        <ul>
+        <ul class="alphabet">
           <li>
             <a href="https://www.skillshare.com/teacher-directory/A">A</a>
           </li>
@@ -218,10 +272,12 @@
             <a href="https://www.skillshare.com/teacher-directory/A">Z</a>
           </li>
         </ul>
-        <div>
-          <ul>
+        <div class="wrapper__categories">
+          <ul class="list__creative">
             <li>
-              <a href="https://www.skillshare.com/browse/creative">Creative</a>
+              <a href="https://www.skillshare.com/browse/creative"
+                ><h2 class="title__h2">Creative</h2></a
+              >
             </li>
             <li>
               <a href="https://www.skillshare.com/browse/creative">Animation</a>
@@ -245,12 +301,16 @@
               >
             </li>
             <li>
-              <a href="https://www.skillshare.com/browse/creative">More</a>
+              <a href="https://www.skillshare.com/browse/creative"
+                ><span>More</span></a
+              >
             </li>
           </ul>
-          <ul>
+          <ul class="list__business">
             <li>
-              <a href="https://www.skillshare.com/browse/business">Business</a>
+              <a href="https://www.skillshare.com/browse/business"
+                ><h2 class="title__h2">Business</h2></a
+              >
             </li>
             <li>
               <a href="https://www.skillshare.com/browse/business"
@@ -259,7 +319,7 @@
             </li>
             <li>
               <a href="https://www.skillshare.com/browse/business"
-                >Freelance & Entrepreneurship</a
+                >Freelance & <br />Entrepreneurship</a
               >
             </li>
             <li>
@@ -276,7 +336,75 @@
               >
             </li>
             <li>
-              <a href="https://www.skillshare.com/browse/business">More</a>
+              <a href="https://www.skillshare.com/browse/business"
+                ><span>More</span></a
+              >
+            </li>
+          </ul>
+          <ul class="list__technology">
+            <li>
+              <a href="https://www.skillshare.com/browse/business"
+                ><h2 class="title__h2">Technology</h2></a
+              >
+            </li>
+            <li>
+              <a href="https://www.skillshare.com/browse/business"
+                >Data Science</a
+              >
+            </li>
+            <li>
+              <a href="https://www.skillshare.com/browse/business"
+                >Game Design</a
+              >
+            </li>
+            <li>
+              <a href="https://www.skillshare.com/browse/business"
+                >Mobile Development</a
+              >
+            </li>
+            <li>
+              <a href="https://www.skillshare.com/browse/business"
+                >Product Management</a
+              >
+            </li>
+            <li>
+              <a href="https://www.skillshare.com/browse/business"
+                >Web Development</a
+              >
+            </li>
+            <li>
+              <a href="https://www.skillshare.com/browse/business"
+                ><span>More</span></a
+              >
+            </li>
+          </ul>
+          <ul class="list__lifestyle">
+            <li>
+              <a href="https://www.skillshare.com/browse/business"
+                ><h2 class="title__h2">Lifestyle</h2></a
+              >
+            </li>
+            <li>
+              <a href="https://www.skillshare.com/browse/business">Crafts</a>
+            </li>
+            <li>
+              <a href="https://www.skillshare.com/browse/business">Culinary</a>
+            </li>
+            <li>
+              <a href="https://www.skillshare.com/browse/business">Gaming</a>
+            </li>
+            <li>
+              <a href="https://www.skillshare.com/browse/business"
+                >Health & Wellness</a
+              >
+            </li>
+            <li>
+              <a href="https://www.skillshare.com/browse/business">Languages</a>
+            </li>
+            <li>
+              <a href="https://www.skillshare.com/browse/business"
+                ><span>More</span></a
+              >
             </li>
           </ul>
         </div>
@@ -284,49 +412,78 @@
     </main>
 
     <footer>
-      <h1>Company</h1>
-      <ul>
-        <li>About</li>
-        <li>Careers</li>
-        <li>Press</li>
-        <li>Blog</li>
-        <li>Affiliates</li>
-        <li>Partnerships</li>
-      </ul>
-      <h1>Community</h1>
-      <ul>
-        <li>Go Premium</li>
-        <li>Team Plans</li>
-        <li>Refer a Friend</li>
-        <li>Gift Cards</li>
-        <li>Scholarships</li>
-        <li>Free Classes</li>
-      </ul>
-      <h1>Teaching</h1>
-      <ul>
-        <li>Become a Teacher</li>
-        <li>Teaching Academy</li>
-        <li>Teacher Handbook</li>
-      </ul>
+      <div class="wrapper__footer">
+        <div>
+          <h1 class="title__footer">Company</h1>
+          <ul class="list__company">
+            <li>About</li>
+            <li>Careers</li>
+            <li>Press</li>
+            <li>Blog</li>
+            <li>Affiliates</li>
+            <li>Partnerships</li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="title__footer">Community</h1>
+          <ul class="list__community">
+            <li>Go Premium</li>
+            <li>Team Plans</li>
+            <li>Refer a Friend</li>
+            <li>Gift Cards</li>
+            <li>Scholarships</li>
+            <li>Free Classes</li>
+          </ul>
+        </div>
+        <div>
+          <h1 class="title__footer">Teaching</h1>
+          <ul class="list__teaching">
+            <li>Become a Teacher</li>
+            <li>Teaching Academy</li>
+            <li>Teacher Handbook</li>
+          </ul>
+        </div>
+      </div>
+      <div class="wrapper__images">
+        <img
+          src="images/googleplay.png"
+          alt="Download button to Google Playstore"
+        />
+        <img src="images/applestore.png" alt="Download button to Apple Store" />
+      </div>
       <hr />
-      <img
-        src="images/googleplay.png"
-        alt="Download button to Google Playstore"
-      />
-      <img src="images/applestore.jpg" alt="Download button to Apple Store" />
-      <a href="https://www.facebook.com/skillshare">
-        <img src="images/facebookicon.svg" alt="Facebook Icon" />
-      </a>
-      <a href="https://twitter.com/skillshare">
-        <img src="images/twittericon.svg" alt="Twitter Icon" />
-      </a>
-      <a href="https://www.instagram.com/skillshare/">
-        <img src="images/instagramicon.svg" alt="Instagram Icon" />
-      </a>
-      <p>© Skillshare, Inc. 2020</p>
-      <a href="https://help.skillshare.com/hc/en-us">Help</a>
-      <a href="https://www.skillshare.com/privacy">Privacy</a>
-      <a href="https://www.skillshare.com/terms">Terms</a>
+      <div class="wrapper__lastfooteritems">
+        <ul class="wrapper__socials">
+          <li>
+            <a href="https://www.facebook.com/skillshare">
+              <img src="images/facebookicon.svg" alt="Facebook Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="https://twitter.com/skillshare">
+              <img src="images/twittericon.svg" alt="Twitter Icon" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/skillshare/">
+              <img src="images/instagramicon.svg" alt="Instagram Icon" />
+            </a>
+          </li>
+        </ul>
+        <p>© Skillshare, Inc. 2020</p>
+        <ul class="wrapper__lastfooteritems--links">
+          <li>
+            <a href="https://help.skillshare.com/hc/en-us">Help</a>
+          </li>
+          <li>
+            <a href="https://www.skillshare.com/privacy">Privacy</a>
+          </li>
+          <li>
+            <a href="https://www.skillshare.com/terms">Terms</a>
+          </li>
+        </ul>
+      </div>
     </footer>
+    <script src="scripts/script.js"></script>
   </body>
 </html>

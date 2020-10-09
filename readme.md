@@ -20,7 +20,25 @@ Mijn [Codepen](https://codepen.io/Karlijn12345/pen/oNxdaEP)
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+### Stand van zaken
+
+Ik ben de afgelopen twee weken bezig geweest met beide HTML pagina's zo goed als af te maken qua styling. Daarnaast heb ik nu al mijn sections een class naam gegeven, omdat anders de styling door de tweede pagina werd overgenomen. Ik was nog niet zo ver met mijn tweede HTML pagina twee weken geleden, maar die achterstand heb ik zo goed als in gehaald. Op beide pagina's zijn er een aantal dingetjes waar ik nog aan moet werken, zoals:
+
+- Eén section is nog niet af op mijn homepagina
+- Ik ben bezig met het maken van een werkende hamburger menu, helaas gaat er ergens nog iets fout waardoor deze nog niet werkt.
+- Op de tweede HTML pagina is de navigation-wrapper nog niet volledig af.
+
+Daarnaast is mijn website nog niet helemaal responsive, deze wil ik volledig responsive gaan maken in de herfstvakantie.
+
+### Agenda voor meeting
+
+Ik zou graag geholpen willen worden met mijn hamburger menu. Daarnaast heb ik ook een vraag over de manier waarop ik een video heb gebruikt in mijn code. Ik weet niet of, doordat de video een groot bestand is, de website wordt vertraagd en of ik de manier waarop ik dit heb gedaan wel goed is. Ten slotte wil ik mijn website eventjes doorlopen en feedback vragen.
+
+### Verslag van meeting
+
+**Screenshot(s):**
+![screenshot_19](images/screenshot18.png)
+![screenshot_20](images/screenshot20.png)
 
 ## Voortgang 2 (week 5)
 
@@ -28,15 +46,19 @@ Mijn [Codepen](https://codepen.io/Karlijn12345/pen/oNxdaEP)
 
 De afgelopen twee weken ben ik bezig geweest met het opzetten van een tweede HTML pagina en het stijlen van de eerste HTML pagina. Dit gaat al aardig goed. Hier en daar zijn er wat dingetjes die ik lastig vind, maar Google en vragen stellen helpen enorm. De volgende grote uitdaging wordt om een carousel te gaan maken met JavaScript. Gelukkig zijn er ook boordevol tutorials hierover op Youtube te vinden.
 
-### Agenda voor meeting
-
-Ik ga een aantal vragen aan de student assitent vragen. Vooral over wat de beste manier is hoe ik mijn tweede HTML pagina kan stijlen aangezien ik voor mijn eerste HTML pagina alle elementen heb aan geshreven met first-of-type, nth-of-type, etc. en hierdoor de stijling ook wordt overgenomen door de HTML elementen op de tweede HTML pagina.
-
-Daarnaast zijn er een aantal simpele dingetjes waar ik tegen aan loop. Zoals een knop die niet doet wat ik wil en een afbeelding die ik niet goed geplaatst krijg, etc.
-
 **Screenshot(s):**
 
 ![screenshot_18](images/screenshot18.png)
+
+### Agenda voor meeting
+
+Ik ga een aantal vragen aan de student assistent vragen. Vooral over wat de beste manier is hoe ik mijn tweede HTML pagina kan stijlen aangezien ik voor mijn eerste HTML pagina alle elementen heb aan geshreven met first-of-type, nth-of-type, etc. en hierdoor de stijling ook wordt overgenomen door de HTML elementen op de tweede HTML pagina.
+
+Daarnaast zijn er een aantal simpele dingetjes waar ik tegen aan loop. Zoals een knop die niet doet wat ik wil en een afbeelding die ik niet goed geplaatst krijg, etc.
+
+### Verslag van meeting
+
+Al mijn vragen zijn beantwoord. Ik ga of de main elementen van mijn HTML pagina's een class geven of ik ga al mijn section elementen een class geven. Beide HTML pagina's hebben namelijk geen overeenkomstige structuur. Daarnaast heb ik ook de kleinere puntjes kunnen oplossen en kan ik ik nu weer verder coderen.
 
 ## Voortgang 1 (week 3)
 
@@ -53,18 +75,20 @@ Ik had al een tijdje niet meer gecodeerd, dus HTML oppakken was in het begin wee
 ### Agenda voor meeting
 
 De meeting hebben wij een uur voor het voortgangsgesprek. We hadden een erge drukke week, op donderdag hadden wij zelfs les van 9:20 tot 18:40, waardoor we niet eerder tijd hadden om af te spreken. Wanneer we een agenda hebben gemaakt, zal ik die hier plaatsen.
-Samen met mijn groepje zijn wij voor de les samen gekomen om een agenda op te stellen. We hebben elkaars vragen eerst proberen te antwoorden en de dingen waar we extra uitleg over wilden opgeschreven voor het voortgangsgesprek: 
+Samen met mijn groepje zijn wij voor de les samen gekomen om een agenda op te stellen. We hebben elkaars vragen eerst proberen te antwoorden en de dingen waar we extra uitleg over wilden opgeschreven voor het voortgangsgesprek:
 
 Mijn vraag(en):
+
 - Divjes, wanneer wel en wanneer niet?
-- Hoe moet je een hamburgermenu maken? 
+- Hoe moet je een hamburgermenu maken?
 - Hamburger menu, logo en nog een item in nav bar, die wel in een <ul> of niet?
-- Mobile version eerste 4 items zichtbaar en de rest valt onder meer en op desktop versie zie je alle onderwerpen in de nav bar. Hoe codeer je dit? 
+- Mobile version eerste 4 items zichtbaar en de rest valt onder meer en op desktop versie zie je alle onderwerpen in de nav bar. Hoe codeer je dit?
 - Positionering (Akshay)
 - Karlijn: Logo in header staat niet in het midden
 
 - Hoe positioneer ik een afbeelding in een hero in zo'n geval dat de hoeken niet uitlijnen met de container maar er verder buiten vallen, van het scherm af?
-Daarnaast hebben we een planning gemaakt voor de aankomende week: 
+  Daarnaast hebben we een planning gemaakt voor de aankomende week:
+
 1. De dag na de les 19 septemeber 2020 begin maken met CSS.
 2. Vragen opstellen voor de studentenassistenten.
 3. Kijken of we al iets met Javascript kunnen doen?
@@ -73,7 +97,7 @@ Daarnaast hebben we een planning gemaakt voor de aankomende week:
 ### Verslag van meeting
 
 -na afloop snel uitkomsten vastleggen-
-Uit het voortgangsgesprek heb ik veel informatie kunnen halen. Zo weet ik nu wanneer ik wel en geen divjes moet gebruiken. Een div gebruik je voor opmaak, tenzij er andere elementen zijn die semantisch correct zijn, dan gebruik je die voor de opmaak. Daarnaast wist ik ongeveer al hoe je een hamburger menu moest maken. Ik ging er vanuit dat je dat net zoals de Humpty opdracht van vorige week moest doen en dat is correct. Ten slotte had ik een vraag over hoe ik mijn logo in het midden kon zetten. Ik had alles namelijk al met flexbox goed gezet. Ik had zelf ook al margin-left geprobeerd, maar ik wist niet of dit mocht, maar blijkbaar was dit alsnog correct :) 
+Uit het voortgangsgesprek heb ik veel informatie kunnen halen. Zo weet ik nu wanneer ik wel en geen divjes moet gebruiken. Een div gebruik je voor opmaak, tenzij er andere elementen zijn die semantisch correct zijn, dan gebruik je die voor de opmaak. Daarnaast wist ik ongeveer al hoe je een hamburger menu moest maken. Ik ging er vanuit dat je dat net zoals de Humpty opdracht van vorige week moest doen en dat is correct. Ten slotte had ik een vraag over hoe ik mijn logo in het midden kon zetten. Ik had alles namelijk al met flexbox goed gezet. Ik had zelf ook al margin-left geprobeerd, maar ik wist niet of dit mocht, maar blijkbaar was dit alsnog correct :)
 
 ## Intake (week 1)
 
