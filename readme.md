@@ -8,7 +8,7 @@ Mijn [Codepen](https://codepen.io/Karlijn12345/pen/oNxdaEP)
 
 1. https://www.squarespace.com
 2. https://www.skillshare.com/
-3.
+3. https://css-tricks.com/almanac/
 
 ## Eindgesprek (week 7/8)
 
