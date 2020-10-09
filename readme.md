@@ -37,7 +37,7 @@ Ik zou graag geholpen willen worden met mijn hamburger menu. Daarnaast heb ik oo
 ### Verslag van meeting
 
 **Screenshot(s):**
-![screenshot_19](images/screenshot18.png)
+![screenshot_19](images/screenshot19.png)
 ![screenshot_20](images/screenshot20.png)
 
 ## Voortgang 2 (week 5)
