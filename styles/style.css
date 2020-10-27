@@ -1,3 +1,4 @@
+/*Every used font*/
 @font-face {
   font-family: "GTWalsheim";
   src: url("../fonts/GTWalsheimPro-Regular.ttf") format("ttf"),
@@ -6,7 +7,6 @@
   font-weight: 500;
 }
 
-/*Every used font*/
 @font-face {
   font-family: "GTWalsheim";
   src: url("../fonts/GTWalsheimPro-Bold.ttf") format("ttf"),
@@ -43,9 +43,36 @@ body {
   margin: 0;
 }
 
+/* Text selection color will be bright green */
+::selection {
+  background-color: #08fe84;
+}
+
 /* The main background color */
 main {
   background-color: #f4f4f4;
+}
+
+a:focus {
+  outline: none;
+  border: 2px solid red;
+}
+
+a:active {
+  border: none;
+}
+
+button:focus {
+  outline: none;
+  border: 2px solid red;
+}
+
+button:active {
+  border: none;
+}
+
+.main--detail {
+  background-color: #002333;
 }
 
 /* Every image will have the same width as it's container*/
@@ -69,17 +96,23 @@ img {
   font-weight: 600;
 }
 
+/* Styling for footer */
 .title__footer {
   font-size: 1.125rem;
   font-weight: 500;
+  color: white;
 }
 
-/*/////////////////////////*/
+/*//////////////////////////////////////////////////////////////////////////*/
 /* HEADER */
+/*//////////////////////////////////////////////////////////////////////////*/
+
+/*/////////////////////////*/
+/* Mobile Navigation Bar */
 /*/////////////////////////*/
 
-/* Navigation bar in header */
-nav {
+/* Mobile Navigation container <nav> */
+.mobile-menu {
   display: flex;
   background-color: #002333;
   height: 64px;
@@ -87,22 +120,30 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  z-index: 2;
+  position: relative;
 }
 
-nav button {
+/* Hamburgermenu icon */
+.mobile-menu .hamburgericon {
   background: none;
   border: none;
 }
 
-/* Magnifier icon in header */
-nav img:nth-of-type(2) {
+/* Gets rid of the standard outline and border around a button */
+.hamburgericon:focus {
+  outline: none;
+  border: 2px solid red;
+}
+
+/* Magnifier icon in nav in skillshareclass.html*/
+.mobile-menu img:nth-of-type(2) {
   margin-left: 0.75rem;
 }
 
-/* Logo in header */
-nav a img {
-  height: 36px;
-  width: 72px;
+/* Logo in nav */
+.mobile-menu a img {
+  width: 4.5rem;
   margin-left: 2.4rem;
 }
 
@@ -112,7 +153,7 @@ otherwise the magnifying glass will push it aside */
   margin-left: 0;
 }
 
-/* link of sign in button in the header */
+/* link of sign in button in the nav */
 .header__button {
   text-decoration: none;
   color: white;
@@ -123,7 +164,17 @@ otherwise the magnifying glass will push it aside */
   border-radius: 5px;
 }
 
-/* Modifier of Sign Up button in header */
+.header__button:hover {
+  background-color: white;
+  color: #002333;
+}
+
+.header__button:active {
+  background-color: #c4c4c4;
+  color: #002333;
+}
+
+/* Modifier of Sign Up button in nav */
 .header__button--green {
   background-color: #06fa84;
   color: black;
@@ -132,55 +183,182 @@ otherwise the magnifying glass will push it aside */
   border: none;
 }
 
+.header__button--green:hover {
+  background-color: #06d870;
+}
+
+.header__button--green:active {
+  background-color: white;
+  color: #002333;
+}
+
+.header__button--green:focus {
+  outline: none;
+  border: 2px solid #ff0037;
+}
+
 /*/////////////////////////*/
-/* MAIN */
+/* Desktop Navigation Bar */
 /*/////////////////////////*/
 
-/* Extendable Hamburgermenu */
+/* Desktop navigation container <nav> */
+.desktop-menu {
+  width: 100%;
+  position: absolute;
+  background-color: transparent;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.875rem 1.75rem 0.875rem 1.25rem;
+}
+
+.desktop-menu--detail {
+  position: static;
+  background-color: #002333;
+}
+
+/* Logo in nav */
+.desktop-menu a img {
+  width: 6.5rem;
+}
+
+.desktop-menu-left {
+  display: flex;
+}
+
+.browse-button {
+  margin-left: 2rem;
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.browse-button:hover {
+  color: #06fa84;
+}
+
+.desktop-menu-right a:first-of-type {
+  color: white;
+  text-decoration: none;
+  margin-right: 1.125rem;
+  font-weight: 600;
+}
+
+.desktop-menu-right a:first-of-type:hover {
+  color: #06fa84;
+}
+
+.header__button--modifier {
+  font-size: 1.125rem;
+  font-weight: 600;
+  padding-left: 1.25rem;
+  /* height: 2.5rem; */
+  padding: 0.5rem 1.25rem;
+}
+
+.header__button--modifier:hover {
+  background-color: white;
+  color: #002333;
+}
+
+.header__button--modifier:active {
+  background-color: #c4c4c4;
+}
+
+/* Media queries for switching between mobile nav bar and desktop nav bar */
+@media screen and (max-width: 61.76rem) {
+  .desktop-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 61.75rem) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .hero-section {
+    position: relative;
+    height: 65rem;
+  }
+}
+
+/*///////////////////////////////////////////////////////////////////////////*/
+/* MAIN */
+/*///////////////////////////////////////////////////////////////////////////*/
+
+/*/////////////////////////*/
+/* Extendable hamburgermenu section */
+/*/////////////////////////*/
 .hamburgermenu-section {
-  padding-bottom: 22.625rem;
+  padding-bottom: 30rem;
   padding-top: 1rem;
   width: 100%;
   font-weight: 600;
   background-color: white;
   left: 0;
   right: 0;
-  z-index: -1;
-  position: fixed;
-  transform: translateY(-100%);
+  z-index: 1;
+  position: absolute;
+  transition: 0.5s;
+  transform: translateX(-100%);
+  border: none;
 }
 
+/* when JS adds .showmenu to .hamburgermenu-section, hamburgermenu will appear*/
 .hamburgermenu-section.showmenu {
-  transform: translateY(0%);
+  transform: translateX(0%);
 }
 
+.hamburgermenuicon .hamburgericon {
+  border: none;
+}
+
+/* List in hamburgermenu */
 .hamburgermenu-section ul {
   list-style: none;
 }
 
+/* Listitems in hamburgermenu list */
 .hamburgermenu-section li {
   padding: 0.75rem 0 1rem;
   margin-left: -1.5rem;
   border-bottom: 0.0625rem solid #dcdee1;
 }
 
-/* Section -> Hero */
+.hamburgermenu-section a {
+  color: #002333;
+  text-decoration: none;
+}
+
+/*/////////////////////////*/
+/* Hero section */
+/*/////////////////////////*/
 .hero-section {
   background-image: url("../images/headerimage.png");
   background-size: cover;
-  height: 375px;
+  height: 23.375rem;
+}
+
+.wrapper__hero {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100%;
 }
 
 /* Overlay on top of the first section to make the hero more readable and to
 align items in the middle*/
-.hero-section div {
-  background-color: rgba(0, 0, 0, 0.4);
-  height: 100%;
+.wrapper__hero-content {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding: 2rem;
   align-items: center;
+  z-index: 1;
 }
 
 /* Header in the first section*/
@@ -190,23 +368,27 @@ align items in the middle*/
   font-family: "Cormorant", serif;
   font-weight: 400;
   font-size: 3.125rem;
-  margin-top: 2rem;
+  margin-top: 4rem;
+  line-height: 3.5rem;
+  margin: 4rem 3rem 0;
 }
 
+/* Makes the . behind the title a different color */
 .hero-section span {
   color: #08fe84;
 }
 
-/* Second header in the first section */
+/* Second header in the hero */
 .hero-section h2 {
   font-weight: 500;
   font-size: 1.125rem;
   color: white;
   line-height: 1.5rem;
   padding: 0 1.5rem;
+  margin-bottom: 1.125rem;
 }
 
-/* Green button to get started for free in the first section */
+/* Green button in the hero */
 .hero-section a {
   font-size: 1.375rem;
   background-color: #08fe84;
@@ -217,17 +399,155 @@ align items in the middle*/
   border-radius: 0.25rem;
   padding: 0.875rem 2rem;
   line-height: 1.5rem;
-  margin-bottom: 2rem;
 }
 
-/* Second section */
+.hero-section a:hover {
+  background-color: #06d870;
+}
+
+.hero-section a:active {
+  background-color: #06be63;
+}
+
+/* Media queries that make changes in the hero when screen gets bigger/smaller */
+@media screen and (min-width: 31.25rem) {
+  .hero-section h1 {
+    margin: 4.25rem 1rem 0;
+  }
+
+  .hero-section h2 {
+    padding: 0;
+  }
+}
+
+/* video hier */
+@media screen and (min-width: 35rem) {
+  .hero-section {
+    height: 28.375rem;
+  }
+
+  .hero-section h1 {
+    font-size: 4.5rem;
+    line-height: 4.25rem;
+    margin: 5rem 5rem 0.25rem;
+  }
+
+  .hero-section h2 {
+    font-size: 1.625rem;
+    padding: 0 4.375rem;
+    line-height: 2rem;
+    margin-bottom: 2.75rem;
+  }
+}
+
+@media screen and (min-width: 50.75rem) {
+  .hero-section {
+    height: 34.75rem;
+  }
+
+  .hero-section h1 {
+    margin-top: 10.25rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 61.75rem) {
+  .hero-section {
+    height: 45rem;
+  }
+
+  .hero-section h1 {
+    margin-top: 16.125rem;
+  }
+}
+
+/*/////////////////////////*/
+/* Extendable browse section */
+/*/////////////////////////*/
+
+.browse-section {
+  border-radius: 0.5rem;
+  width: 52rem;
+  position: absolute;
+  background: white;
+  z-index: 1;
+  margin: 5rem 0 0 10rem;
+  transform: translateX(-120%);
+  transition: 0.5s;
+}
+
+.browse-section.showmenu {
+  transform: translateX(0);
+}
+
+.browse-section__content {
+  display: flex;
+  padding: 2rem;
+}
+
+.browse-section__categories {
+  display: flex;
+}
+
+.browse-section__title {
+  margin: 0;
+  color: #394649;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.0625rem;
+  border-bottom: #dcdee1 1px solid;
+  margin-bottom: 0.625rem;
+  height: 1.5rem;
+}
+
+.browse-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.browse-section ul li {
+  margin-bottom: 1.375rem;
+}
+
+.browse-section__categories-container-create {
+  margin-right: 6.25rem;
+  width: 14rem;
+}
+
+.browse-section__categories-container-middel {
+  margin-right: 6.25rem;
+  margin-left: -4.5rem;
+  width: 14rem;
+}
+
+.browse-section a {
+  color: #002332;
+  text-decoration: none;
+}
+
+.browse-section-other {
+  border-left: 1px solid #dcdee1;
+  font-weight: 600;
+  margin-left: -4.5rem;
+}
+
+.browse-section-other a {
+  margin-left: 2rem;
+}
+
+/*/////////////////////////*/
+/* Fascinates section */
+/*/////////////////////////*/
 .fascinates-section {
   background-color: #f4f4f4;
   color: #002333;
   padding: 7.5rem 0 6.5rem;
 }
 
-/* Header in second section */
+/* List with categories */
 .categories-list {
   margin: 0;
   padding: 0;
@@ -237,29 +557,43 @@ align items in the middle*/
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 2rem 2rem;
+  margin: 0 2rem 3rem;
 }
 
+/* List items in categories list */
 .categories-list li {
   padding: 0.5rem;
 }
 
+/* List items links in categories list */
 .categories-list a {
   text-decoration: none;
   color: #002333;
 }
 
-.categories-list li.active a {
+.categories-list a:hover {
   color: #3722d3;
   border-bottom: 0.25rem solid #3722d3;
   padding-bottom: 0.25rem;
 }
 
+/* Styling for when one of the list items is active */
+.categories-list li.active a {
+  color: #3722d3;
+  border-bottom: 0.25rem solid #3722d3;
+  padding-bottom: 0.5rem;
+}
+
+/* Wrapper around the card-list items*/
 .card-list-wrapper {
   padding: 0 4rem;
   overflow: hidden;
+  padding-bottom: 1rem;
+  max-width: 84.25rem;
+  margin: 0 auto;
 }
 
+/* List with cards */
 .card-list {
   display: flex;
   flex-wrap: nowrap;
@@ -268,29 +602,36 @@ align items in the middle*/
   padding: 0;
 }
 
+/* List items in card list */
 .card-list li {
   flex-shrink: 0;
   flex-grow: 0;
   flex-basis: 100%;
   padding: 0 0.5rem;
+  margin-bottom: 1rem;
 }
 
+/* Every list item is an article */
 .card-list article {
   position: relative;
   box-shadow: 0 2px 4px 0 rgba(184, 184, 184, 0.5);
   overflow: hidden;
   border-radius: 0.5rem;
+  background-color: white;
 }
 
+/* Styling for the list item links */
 .card-list a {
   text-decoration: none;
   color: #002333;
 }
 
+/* To make image relative */
 .card-list__images {
   position: relative;
 }
 
+/* Gradient overlay on top of image to make the original logo more readable */
 .card-list__images::before {
   content: "";
   position: absolute;
@@ -301,7 +642,8 @@ align items in the middle*/
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, transparent 50%);
 }
 
-.card-list article img:first-of-type {
+/* Original logo on top of image */
+.card-list__original-logo {
   position: absolute;
   left: 0;
   top: 0;
@@ -309,23 +651,71 @@ align items in the middle*/
   width: 5.5rem;
 }
 
+/* Content part of the article */
 .card-list__content {
   padding: 0.5rem;
 }
 
-.card-list h1 {
+/* Title of the article */
+.card-list__title {
   font-size: 0.9375rem;
   text-align: center;
   margin: 0 0 1.5rem;
   font-weight: 600;
 }
 
-.card-list span {
+.card-list__title--large {
+  font-size: 1.375rem;
+}
+
+/* under title of article */
+.card-list__subtitle {
   text-align: center;
   display: block;
   text-align: center;
 }
 
+.card-list__subtitle--large {
+  font-size: 1.125rem;
+}
+
+@media screen and (min-width: 35rem) {
+  .card-list li {
+    flex-basis: 50%;
+  }
+}
+
+@media screen and (min-width: 50.75rem) {
+  .fascinates-section > h1 {
+    font-size: 3rem;
+  }
+
+  .fascinates-section br {
+    display: none;
+  }
+
+  .categories-list li {
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+@media screen and (min-width: 61.75rem) {
+  .card-list li {
+    flex-basis: 33%;
+  }
+
+  .card-list-container {
+    overflow: hidden;
+  }
+
+  .card-list-wrapper {
+    overflow: visible;
+  }
+}
+
+/*/////////////////////////*/
+/* Explore section */
+/*/////////////////////////*/
 .explore-section {
   background-image: url("../images/banner-item1.png");
   padding: 30rem 0 8rem;
@@ -334,39 +724,54 @@ align items in the middle*/
   background-position: center center;
 }
 
-.explore-section div {
+/* Container and gradient overlay to make content more readable */
+.overlaycontainer {
   background: rgba(0, 0, 0, 0.5);
   height: 100%;
   position: absolute;
   left: 0;
   top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+}
+
+.container-explorecontent {
   display: flex;
   flex-direction: column;
   padding: 1.875rem;
   align-items: flex-start;
   justify-content: center;
+  margin: 0 auto;
+  max-width: 80rem;
+  width: 100%;
 }
 
-.explore-section div > img {
+/* Original logo image */
+.overlaycontainer > img {
   width: 4.25rem;
 }
 
+/* Styling for link */
 .explore-section a:first-of-type {
   text-decoration: none;
   color: white;
-
   font-weight: 600;
   font-size: 1.625rem;
   margin: 1.5rem 0 1rem;
 }
 
+/* Styling for paragraph */
 .explore-section p {
   font-size: 1.125rem;
   color: white;
   line-height: 1.5rem;
   margin: 0;
+  max-width: 33rem;
 }
 
+/* Stylink for green button */
 .explore-section a:nth-of-type(2) {
   text-decoration: none;
   background-color: #06fa84;
@@ -375,37 +780,88 @@ align items in the middle*/
   margin-top: 2rem;
 }
 
+.explore-section a:nth-of-type(2):hover {
+  background-color: #06d870;
+}
+
+.explore-section a:nth-of-type(2):active {
+  background-color: #049a50;
+}
+
+/* Text in green button */
 .explore-section span {
   color: #002333;
   font-size: 1.125rem;
   font-weight: 600;
 }
 
+@media screen and (min-width: 50rem) {
+  .explore-section {
+    background-image: url("../images/outdoorhorizontal.jpeg");
+  }
+
+  .overlaycontainer > img {
+    width: 6rem;
+    margin-top: 0rem;
+  }
+
+  .container-explorecontent a:first-of-type {
+    font-size: 3rem;
+  }
+
+  .container-explorecontent p {
+    font-size: 1.375rem;
+    max-width: 37rem;
+  }
+}
+
+/*/////////////////////////*/
+/* Discover section */
+/*/////////////////////////*/
+/* Content of this section that overflows stays hidden */
 .discover-section {
   overflow: hidden;
 }
 
+.container-discovercontent {
+  margin: 9.375rem 0;
+}
+
+/* Styling of image */
 .discover-section img {
-  margin: 10rem 0 3rem 3.25rem;
+  margin: 0 0 3rem 1.5rem;
   box-shadow: 0.75rem 0.75rem 1.5625rem rgba(0, 0, 0, 0.4);
   border-radius: 0.3125rem;
 }
 
-.discover-section div {
+/* Container to center content*/
+.container-textcontent {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 0 3rem;
 }
 
+.container-textcontent__title {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  margin-top: 0;
+  line-height: 2.75rem;
+}
+
+/* Line */
 .discover-section hr {
   background-color: #3722d3;
   border-radius: 0.5rem;
+  border: none;
   height: 0.5rem;
   width: 6.25rem;
-  margin: 1.5rem auto;
+  margin-bottom: 1.5rem;
 }
 
+/* Styling of paragraph */
 .discover-section p {
   color: #002333;
   font-size: 1.125rem;
@@ -413,29 +869,117 @@ align items in the middle*/
   margin: 0 1rem 0 1rem;
 }
 
+/* Styling of link */
 .discover-section a {
   color: #3729d3;
   border: 0.0625rem solid #3729d3;
   text-decoration: none;
   height: 2.5rem;
-  margin-top: 2rem;
-
   font-weight: 600;
   padding: 0.625rem 1.25rem;
   border-radius: 0.3125rem;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
   font-size: 1.125rem;
 }
 
-.creators-section {
-  background-color: #002333;
+.discover-section a:hover {
+  color: white;
+  background-color: #3729d3;
 }
 
+.discover-section a:active {
+  color: white;
+  background-color: #291f9d;
+}
+
+@media screen and (min-width: 35rem) {
+  .discover-section img {
+    margin-left: 4.5rem;
+  }
+
+  .container-textcontent {
+    padding: 0 7.5rem;
+  }
+
+  .container-textcontent__title {
+    font-size: 3rem;
+    line-height: 3.25rem;
+  }
+
+  .discover-section p {
+    font-size: 1.375rem;
+    line-height: 1.75rem;
+  }
+}
+
+@media screen and (min-width: 50rem) {
+  .container-discovercontent {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container-textcontent {
+    flex-basis: 20rem;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-left: 4.5rem;
+    padding: 0;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .discover-section p {
+    margin: 0;
+  }
+
+  .discover-section hr {
+    margin-left: 0;
+  }
+
+  .container-discovercontent__image-container {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .discover-section img {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 4rem;
+    height: 24rem;
+    max-width: none;
+  }
+}
+
+@media screen and (min-width: 61.75rem) {
+  .container-discovercontent {
+    margin: 12.5rem auto;
+    max-width: 85rem;
+  }
+
+  .discover-section img {
+    height: 35.875rem;
+  }
+}
+
+/*/////////////////////////*/
+/* Creators section */
+/*/////////////////////////*/
+.creators-section {
+  background-color: #002333;
+  padding-bottom: 12rem;
+}
+
+/* Title modifier */
 .title__h1--white {
   color: white;
   padding-top: 6.875rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
+/* Line */
 .creators-section hr {
   height: 0.5rem;
   width: 6.25rem;
@@ -445,26 +989,33 @@ align items in the middle*/
   border: none;
 }
 
+/* Styling of paragraph */
 .creators-section p {
   color: white;
-
   font-size: 1.375rem;
   line-height: 1.75rem;
   text-align: center;
   padding: 0 1rem 2rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
 }
 
+/*/////////////////////////*/
+/* Teacherdirectory section */
+/*/////////////////////////*/
 /* Teacher Directory with alphabet and categories */
 .teacherdirectory-section h1 {
   font-size: 0.9375rem;
   color: #002333;
   font-weight: 600;
   text-align: center;
+  margin-top: 4rem;
 }
 
 /* Every list has no bullets*/
 .teacherdirectory-section ul {
   list-style: none;
+  flex-basis: 50%;
 }
 
 /* All links */
@@ -482,6 +1033,7 @@ align items in the middle*/
   margin: 0 1rem;
 }
 
+/* List item of alphabet list */
 .alphabet li {
   padding: 0.5rem;
 }
@@ -492,6 +1044,11 @@ align items in the middle*/
   color: #3722d3;
 }
 
+.alphabet a:hover {
+  text-decoration: underline;
+}
+
+/* Wrapper for card items */
 .wrapper__categories {
   display: flex;
   flex-wrap: wrap;
@@ -508,23 +1065,51 @@ align items in the middle*/
   padding-bottom: 0.625rem;
 }
 
+.wrapper__categories ul li:hover {
+  text-decoration: underline;
+}
+
 .wrapper__categories ul h2 {
   margin-bottom: 0.5rem;
 }
 
-.list__lifestyle {
-  margin-left: -1.5rem;
+@media screen and (min-width: 38.75rem) {
+  .wrapper__categories {
+    justify-content: space-between;
+    margin-right: 3rem;
+    margin-left: 3rem;
+  }
+  .wrapper__categories ul {
+    flex-basis: auto;
+  }
+
+  .list__lifestyle {
+    margin-right: 2.5rem;
+  }
 }
 
-.list__business {
-  margin-left: 1rem;
+@media screen and (min-width: 50rem) {
+  .title__h1--white {
+    font-size: 3rem;
+  }
 }
 
-/*FOOTER*/
+@media screen and (min-width: 61.75rem) {
+  .wrapper__categories {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+}
+
+/*///////////////////////////////////////////////////////////////////////////*/
+/* FOOTER */
+/*///////////////////////////////////////////////////////////////////////////*/
 footer {
   background-color: #002333;
   padding-top: 2rem;
 }
+
+/* Container around three lists */
 .wrapper__footer {
   display: flex;
   flex-wrap: wrap;
@@ -533,26 +1118,47 @@ footer {
   justify-content: space-between;
 }
 
+/* Styling of titles */
 .wrapper__footer h1 {
   padding-bottom: 1rem;
 }
 
+/* Styling of lists */
 .wrapper__footer ul {
   list-style: none;
   padding: 0 1rem;
   padding-right: 3rem;
 }
 
+/* list items in lists */
 .wrapper__footer ul li {
   padding-bottom: 2rem;
 }
 
-/*Google Play and Google Appstore images */
-.wrapper__images {
-  display: flex;
-  justify-content: center;
+.wrapper__footer ul li:hover {
+  text-decoration: underline;
 }
 
+.wrapper__footer ul li a:hover {
+  color: #08fe84;
+}
+
+.wrapper__footer a {
+  color: white;
+  text-decoration: none;
+}
+
+/*Container around Google Play and Google Appstore images */
+.wrapper__images {
+  justify-content: center;
+  display: flex;
+}
+
+.wrapper__images--detail {
+  display: none;
+}
+
+/*Google Play and Google Appstore images*/
 .wrapper__images img {
   width: 7.5rem;
   border: 0.0625rem solid white;
@@ -560,15 +1166,18 @@ footer {
   margin-bottom: 2rem;
 }
 
+/* Google play image */
 .wrapper__images img:first-of-type {
   margin-right: 2rem;
 }
 
+/* Line */
 footer hr {
   border-color: #00ff84;
   width: 85%;
 }
 
+/* Container around socials */
 .wrapper__socials {
   display: flex;
   justify-content: center;
@@ -577,15 +1186,18 @@ footer hr {
   padding: 0;
 }
 
+/* List items in socials */
 .wrapper__socials li {
   padding: 0.25rem;
 }
 
+/* Styling of links in socials */
 .wrapper__socials a {
   padding-right: 1rem;
   align-items: center;
 }
 
+/* Container around the last items in the footer. Don't know how to name them */
 .wrapper__lastfooteritems {
   display: flex;
   flex-direction: column;
@@ -596,45 +1208,159 @@ footer hr {
   font-size: 0.9375rem;
 }
 
+/* Styling of links of lastfooteritems */
 .wrapper__lastfooteritems a {
   color: white;
   text-decoration: none;
 }
 
+/* Modifier */
 .wrapper__lastfooteritems--links {
   list-style: none;
   margin: 0;
   padding: 0;
   display: flex;
 }
+
+/* List items in lastfooteritems */
 .wrapper__lastfooteritems--links li {
   padding: 0.75rem;
 }
 
-/* ///////////////////////////// */
-/* Skillshareclass.html pagina styling*/
-/* ///////////////////////////// */
+.mobiletitle {
+  display: none;
+}
 
+.mobilefooter-item {
+  display: inline;
+}
+
+.wrapper__images-desktop {
+  display: none;
+}
+
+.wrapper__lastfooteritems--left {
+  all: none;
+}
+
+.wrapper__lastfooteritems--left p {
+  text-align: center;
+}
+
+@media screen and (min-width: 48rem) {
+  .wrapper__images {
+    display: none;
+  }
+
+  .wrapper__images-desktop {
+    display: inline;
+    max-width: 14rem;
+    margin-top: 0.75rem;
+  }
+
+  .wrapper__footer {
+    margin-left: 3rem;
+    margin-right: 3rem;
+    flex-wrap: wrap;
+  }
+
+  .wrapper__footer ul {
+    padding-left: 0;
+  }
+
+  .wrapper__footer ul li {
+    font-size: 0.8125rem;
+    padding-bottom: 1rem;
+  }
+
+  .wrapper__images {
+    display: none;
+  }
+
+  .wrapper__images--detail {
+    display: inline;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .appstoreimages img:first-of-type {
+    margin: 0.5rem 0 0.75rem;
+  }
+
+  .mobiletitle {
+    display: inline;
+  }
+
+  .mobilefooter-item {
+    display: inline;
+  }
+
+  .wrapper__lastfooteritems {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 5rem;
+    max-width: 80rem;
+  }
+
+  .wrapper__lastfooteritems--left {
+    display: flex;
+    font-size: 0.8125rem;
+  }
+
+  .wrapper__lastfooteritems--left p {
+    margin-right: 2rem;
+  }
+
+  .wrapper__socials {
+    order: 3;
+  }
+}
+
+@media screen and (min-width: 61.75rem) {
+  .wrapper__footer {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+
+  footer hr {
+    max-width: 80rem;
+  }
+}
+
+/* ///////////////////////////////////////////////////////////////////////// */
+/* Skillshareclass.html pagina styling*/
+/* ////////////////////////////////////////////////////////////////////////// */
+
+/*/////////////////////////*/
+/* Video section */
+/*/////////////////////////*/
 .video-section {
+  max-width: 90.5rem;
+  margin: 0 auto;
   background-color: #002333;
 }
 
+/* Skillshare video */
 .video-section video {
   width: 100%;
 }
 
+/* Container around content (title, author,logo, etc)*/
 .wrapper {
-  padding: 1rem 0 1rem 1rem;
+  padding: 1.5rem;
 }
 
+/* Container around name, . and follow */
 .wrapper div {
   display: flex;
 }
 
+/* Original logo image */
 .video-section img {
   width: 3.5rem;
 }
 
+/* Title */
 .video-section h1 {
   color: white;
   font-weight: 600;
@@ -643,11 +1369,13 @@ footer hr {
   padding-bottom: 0.5rem;
 }
 
+/* Container around . */
 .videosection div {
   display: flex;
   align-items: center;
 }
 
+/* Styling of video links*/
 .video-section a {
   text-decoration: none;
   color: white;
@@ -655,6 +1383,7 @@ footer hr {
   font-size: 0.9375rem;
 }
 
+/* Styling of the dot */
 .dot {
   border-radius: 50%;
   background-color: #dcdee1;
@@ -663,34 +1392,79 @@ footer hr {
   margin: 0.5rem 0.3125rem;
 }
 
+/* Styling to make Follow span different */
 .video-section span {
   font-size: 0.9375rem;
   font-weight: 600;
   color: #00ff84;
 }
 
-.classdetails-section {
-  background: white;
+@media screen and (min-width: 35rem) {
+  .video-section h1 {
+    font-size: 1.625rem;
+  }
 }
 
+/*/////////////////////////*/
+/* Classdetails section */
+/* Hulp gehad van Niek Nijland vanwege flexbox bug */
+/*/////////////////////////*/
+.classdetails-section {
+  background-color: #002333;
+}
+
+/* Container around navigation items */
 .navigation-wrapper {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 1rem;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
-  padding: 0.5rem 0 0 0rem;
   overflow-x: scroll;
+  background-color: white;
+  max-width: 82rem;
 }
 
+.navigation-wrapper a:hover {
+  color: #3722d3;
+}
+
+/* List items in navigation list */
 .navigation-wrapper li {
   font-weight: 600;
-  padding: 0 1rem;
+  padding: 1.5rem 0.5rem;
+  margin-right: 0.5rem;
+  white-space: nowrap;
 }
 
-.playlist-wrapper {
-  background-color: #002333;
+.navigation-wrapper li:hover {
+  color: #3722d3;
+  border-bottom: 0.25rem solid #3722d3;
+  padding-bottom: 0.75rem;
+}
+
+.navigation-wrapper li.active a {
+  color: #3722d3;
+  border-bottom: 0.25rem solid #3722d3;
+  padding-bottom: 0.75rem;
+}
+
+.navigation-wrapper a {
+  color: #002333;
+  text-decoration: none;
+}
+
+/* Container around playlist items */
+
+/* Videos list */
+.playlist-wrapper--video {
+  display: none;
+}
+
+.playlist-wrapper--video li:hover {
+  border: 1px solid #9bb1c0;
+  cursor: pointer;
 }
 
 .playlist {
@@ -701,11 +1475,18 @@ footer hr {
   padding-left: 0;
 }
 
-.playlist > p {
-  padding-left: 4.125rem;
-  padding-top: 2rem;
+.playlist li:first-of-type {
+  background-color: #394649;
 }
 
+/* First p in playliost */
+.playlist > p {
+  padding: 3rem 4.125rem 0;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+/* Container around playlist item to align everything */
 .wrapper-playlistitem {
   display: flex;
   align-items: center;
@@ -714,11 +1495,57 @@ footer hr {
   margin: 0 1.5rem;
 }
 
+/* Container around playlist item image and text to align to the lef */
 .wrapper-imageandtext {
   display: flex;
   align-items: center;
 }
 
+/* Playlist item image on left side */
 .wrapper-imageandtext img {
   padding-right: 1.375rem;
+}
+
+@media screen and (min-width: 35rem) {
+  .navigation-wrapper li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 67.5rem) {
+  .playlist-wrapper {
+    display: none;
+  }
+
+  .playlist-wrapper--video {
+    display: block;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 25rem;
+    position: relative;
+    overflow: auto;
+  }
+
+  .playlist--video {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+  }
+
+  .video-wrapper {
+    display: flex;
+    margin: 0 1.5rem;
+  }
+
+  .video-section video {
+    min-width: 0;
+  }
+
+  .classdetails-section {
+    background-color: white;
+  }
 }

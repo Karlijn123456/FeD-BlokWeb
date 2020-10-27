@@ -8,15 +8,23 @@ Mijn [Codepen](https://codepen.io/Karlijn12345/pen/oNxdaEP)
 
 1. https://www.squarespace.com
 2. https://www.skillshare.com/
-3. https://css-tricks.com/almanac/
+3. https://www.youtube.com/
+4. https://stackoverflow.com/
+5. Niek Nijland
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+Ik moest nog maar 20% van mijn website coderen, maar de laatste lootjes namen toch iets meer tijd in dan ik had verwacht. Gelukkig wel alles op tijd af gekregen. Ik ben vooral bezig geweest met het responsive maken van mijn website, nog een micro-interactie toe te voegen en alles netjes neer te zetten. Uiteindelijk een net resultaat neer kunnen zetten. Wel zijn er hier en daar nog wat slordigheidsfoutjes die eventueel nog opgelost zouden kunnen worden, maar over het algemeen ben ik tevreden met wat ik heb neergezet. Mijn codeer vaardigheden zijn een heel stuk verder ontwikkeld sinds vorig jaar.
 
 **Screenshot(s):**
 
--screenshot(s) van je eindresultaat-
+Mobile
+![Screenshot_21](images/screenshot21.png)
+![Screenshot_23](images/screenshot23.png)
+
+Desktop
+![Screenshot_22](images/screenshot22.png)
+![Screenshot_24](images/screenshot24.png)
 
 ## Voortgang 3 (week 6)
 
@@ -35,6 +43,8 @@ Daarnaast is mijn website nog niet helemaal responsive, deze wil ik volledig res
 Ik zou graag geholpen willen worden met mijn hamburger menu. Daarnaast heb ik ook een vraag over de manier waarop ik een video heb gebruikt in mijn code. Ik weet niet of, doordat de video een groot bestand is, de website wordt vertraagd en of ik de manier waarop ik dit heb gedaan wel goed is. Ten slotte wil ik mijn website eventjes doorlopen en feedback vragen.
 
 ### Verslag van meeting
+
+Heel wat kleine dingetjes waar ik niet uit kwam aan Randy kunnen vragen. Zo onder andere mijn hamburgermenu die zich verstopte achter mijn content en eigenlijk heel makkelijk te fixen was met een z-index. Daarnaast nog wat kleine dingetjes kunnen oplossen door middel van zijn feedback.
 
 **Screenshot(s):**
 ![screenshot_19](images/screenshot19.png)

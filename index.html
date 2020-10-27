@@ -12,9 +12,13 @@
 
   <body>
     <header>
-      <nav>
-        <button class="hamburgericon" type="button">
-          <img src="images/hamburgericon.svg" alt="hamburger menu icon" />
+      <nav class="mobile-menu">
+        <button class="hamburgericon" type="button" style="border:none">
+          <img
+            class="hamburgermenuicon"
+            src="images/hamburgericon.svg"
+            alt="hamburger menu icon"
+          />
         </button>
         <a href="index.html" title="Skillshare logo">
           <img src="images/logo.svg" alt="Skillshare logo" />
@@ -26,25 +30,97 @@
           >Sign In
         </a>
       </nav>
+
+      <nav class="desktop-menu">
+        <div class="desktop-menu-left">
+          <a href="index.html" title="Skillshare logo">
+            <img src="images/logo.svg" alt="Skillshare logo" />
+          </a>
+          <button class="browse-button" type="button">
+            Browse
+            <img src="images/arrowdownwhite.svg" alt="arrow down image" />
+          </button>
+        </div>
+        <div class="desktop-menu-right">
+          <a href="https://teams.skillshare.com/">Team Plans</a>
+          <a
+            class="header__button header__button--modifier"
+            href="https://www.skillshare.com/login"
+            title="Button to sign in"
+            >Sign in
+          </a>
+        </div>
+      </nav>
     </header>
 
     <main>
       <section class="hamburgermenu-section">
         <ul>
-          <li>Home</li>
-          <li>Browse</li>
-          <li>Workshops</li>
-          <li>Student Projects</li>
-          <li>Go Premium</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Browse</a></li>
+          <li><a href="#">Workshops</a></li>
+          <li><a href="#">Student Projects</a></li>
+          <li><a href="#">Go Premium</a></li>
         </ul>
       </section>
+
+      <section class="browse-section">
+        <div class="browse-section__content">
+          <div class="browse-section__categories">
+            <div class="browse-section__categories-container-create">
+              <h1 class="browse-section__title">CREATE</h1>
+              <ul class="browse-section__categories-list-create">
+                <li><a href="#">Animation</a></li>
+                <li><a href="#">Creative Writing</a></li>
+                <li><a href="#">Film & Video</a></li>
+                <li><a href="#">Fine Art</a></li>
+                <li><a href="#">Graphic Design</a></li>
+                <li><a href="#">Illustration</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">Photography</a></li>
+                <li><a href="#">UX/UI Design</a></li>
+                <li><a href="#">Web Development</a></li>
+              </ul>
+            </div>
+            <div class="browse-section__categories-container-middel">
+              <div class="browse-section__categories-container-build">
+                <h1 class="browse-section__title">BUILD</h1>
+                <ul class="brose-section__categories-list-build">
+                  <li><a href="#">Business Analysis</a></li>
+                  <li><a href="#">Freelance & Entrepreneurship</a></li>
+                  <li><a href="#">Leadership & Management</a></li>
+                  <li><a href="#">Marketing</a></li>
+                </ul>
+              </div>
+              <div class="browse-section__categories-container-thrive">
+                <h1 class="browse-section__title">THRIVE</h1>
+                <ul class="browse-section__categories-list-thrive">
+                  <li><a href="#">Lifestyle</a></li>
+                  <li><a href="#">Productivity</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="browse-section-other">
+            <ul class="browse-section__categories-list-right">
+              <li><a href="#">All classes</a></li>
+              <li><a href="#">Recommended Classes</a></li>
+              <li><a href="#">Student Projects</a></li>
+              <li><a href="#">Groups</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       <section class="hero-section">
-        <div>
-          <h1>Explore your creativity<span>.</span></h1>
-          <h2>Join Skillshare to watch, play, learn, make, and discover.</h2>
-          <a href="https://www.skillshare.com/membership/checkout"
-            >Get Started For Free</a
-          >
+        <div class="wrapper__hero">
+          <div class="wrapper__hero-content">
+            <h1>Explore your creativity<span>.</span></h1>
+            <h2>Join Skillshare to watch, play, learn, make, and discover.</h2>
+            <a href="https://www.skillshare.com/membership/checkout"
+              >Get Started For Free</a
+            >
+          </div>
         </div>
       </section>
 
@@ -52,7 +128,7 @@
         <h1 class="title__h1">Find What <br />Fascinates You</h1>
         <ul class="categories-list">
           <li class="active">
-            <a href="https://wwww.skillshare.com">
+            <a href="#">
               All Categories
             </a>
           </li>
@@ -78,94 +154,181 @@
             <a href="https://wwww.skillshare.com/writing">Writing</a>
           </li>
         </ul>
-        <div class="card-list-wrapper">
-          <ul class="card-list">
-            <li>
-              <a href="skillshareclass.html">
-                <article>
-                  <div class="card-list__images">
-                    <img src="images/original.svg" alt="Original logo" />
-                    <img
-                      src="images/card1image.png"
-                      alt="Drawing as Self-Discovery image"
-                    />
-                  </div>
-                  <div class="card-list__content">
-                    <h1>
-                      Drawing as Self-Discovery: 5 Ways to Start
-                    </h1>
-                    <span>Mari Andrew</span>
-                  </div>
-                </article>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.skillshare.com/classes/Drawing-as-Self-Discovery-5-Ways-to-Start/831070146?via=homepage"
-              >
-                <article>
-                  <div class="card-list__images">
-                    <img src="images/original.svg" alt="Original logo" />
-                    <img
-                      src="images/card1image.png"
-                      alt="Drawing as Self-Discovery image"
-                    />
-                  </div>
-                  <div class="card-list__content">
-                    <h1>
-                      Drawing as Self-Discovery: 5 Ways to Start
-                    </h1>
-                    <span>Mari Andrew</span>
-                  </div>
-                </article>
-              </a>
-            </li>
-          </ul>
+        <div class="card-list-container">
+          <div class="card-list-wrapper">
+            <ul class="card-list">
+              <li>
+                <a href="skillshareclass.html">
+                  <article>
+                    <div class="card-list__images">
+                      <img
+                        class="card-list__original-logo"
+                        src="images/original.svg"
+                        alt="Original logo"
+                      />
+                      <img
+                        src="images/card1image.png"
+                        alt="Drawing as Self-Discovery image"
+                      />
+                    </div>
+                    <div class="card-list__content">
+                      <h1 class="card-list__title">
+                        Drawing as Self-Discovery: 5 Ways to Start
+                      </h1>
+                      <span class="card-list__subtitle">Mari Andrew</span>
+                    </div>
+                  </article>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.skillshare.com/classes/Drawing-as-Self-Discovery-5-Ways-to-Start/831070146?via=homepage"
+                >
+                  <article>
+                    <div class="card-list__images">
+                      <img
+                        class="card-list__original-logo"
+                        src="images/original.svg"
+                        alt="Original logo"
+                      />
+                      <img
+                        src="images/fundamentals.png"
+                        alt="Image of Skillshare class: Fundamentals of DSLR Photography"
+                      />
+                    </div>
+                    <div class="card-list__content">
+                      <h1 class="card-list__title">
+                        Fundamentals of DSLR Photography: DSLR
+                      </h1>
+                      <span class="card-list__subtitle">Justin Bridges</span>
+                    </div>
+                  </article>
+                </a>
+              </li>
+              <li>
+                <a href="skillshareclass.html">
+                  <article>
+                    <div class="card-list__images">
+                      <img
+                        class="card-list__original-logo"
+                        src="images/original.svg"
+                        alt="Original logo"
+                      />
+                      <img
+                        src="images/mastering.png"
+                        alt="Image of Skillshare class: Mastering Illustrator"
+                      />
+                    </div>
+                    <div class="card-list__content">
+                      <h1 class="card-list__title">
+                        Mastering Illustrator
+                      </h1>
+                      <span class="card-list__subtitle">DKNG Studios</span>
+                    </div>
+                  </article>
+                </a>
+              </li>
+              <li>
+                <a href="skillshareclass.html">
+                  <article>
+                    <div class="card-list__images">
+                      <img
+                        class="card-list__original-logo"
+                        src="images/original.svg"
+                        alt="Original logo"
+                      />
+                      <img
+                        src="images/creative.png"
+                        alt="Image of Skillshare class: Creative Digital Illustration"
+                      />
+                    </div>
+                    <div class="card-list__content">
+                      <h1 class="card-list__title">
+                        Creative Digital Illustration: Use Adobe
+                      </h1>
+                      <span class="card-list__subtitle">Lisk Feng</span>
+                    </div>
+                  </article>
+                </a>
+              </li>
+              <li>
+                <a href="skillshareclass.html">
+                  <article>
+                    <div class="card-list__images">
+                      <img
+                        class="card-list__original-logo"
+                        src="images/original.svg"
+                        alt="Original logo"
+                      />
+                      <img
+                        src="images/card1image.png"
+                        alt="Drawing as Self-Discovery image"
+                      />
+                    </div>
+                    <div class="card-list__content">
+                      <h1 class="card-list__title">
+                        Drawing as Self-Discovery: 5 Ways to Start
+                      </h1>
+                      <span class="card-list__subtitle">Mari Andrew</span>
+                    </div>
+                  </article>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
       <section class="explore-section">
-        <div>
-          <img src="images/original.svg" alt="original logo" />
-          <a
-            href="https://www.skillshare.com/classes/Outdoor-Photography-See-Shoot-Share-the-Beauty-Around-You/713232985?via=loh-promo-banner-placement1"
-            >Exploring Outdoor <br />Photography</a
-          >
-          <p>
-            Learn how to see, shoot, and share the beauty all around you in a
-            new class with architecural photographer Minh Tran
-          </p>
-          <a
-            href="https://www.skillshare.com/classes/Outdoor-Photography-See-Shoot-Share-the-Beauty-Around-You/713232985?via=loh-promo-banner-placement1"
-          >
-            <img
-              src="images/playicon.svg"
-              alt="Playbutton icon"
-              width="14px"
-              height="16px;"
-            />
-            <span>Watch Now</span>
-          </a>
+        <div class="overlaycontainer">
+          <div class="container-explorecontent">
+            <img src="images/original.svg" alt="original logo" />
+            <a
+              href="https://www.skillshare.com/classes/Outdoor-Photography-See-Shoot-Share-the-Beauty-Around-You/713232985?via=loh-promo-banner-placement1"
+              >Exploring Outdoor <br />Photography</a
+            >
+            <p>
+              Learn how to see, shoot, and share the beauty all around you in a
+              new class with architecural photographer Minh Tran
+            </p>
+            <a
+              href="https://www.skillshare.com/classes/Outdoor-Photography-See-Shoot-Share-the-Beauty-Around-You/713232985?via=loh-promo-banner-placement1"
+            >
+              <img
+                src="images/playicon.svg"
+                alt="Playbutton icon"
+                width="14px"
+                height="16px;"
+              />
+              <span>Watch Now</span>
+            </a>
+          </div>
         </div>
       </section>
 
       <section class="discover-section">
-        <img
-          src="images/discoverimage.png"
-          alt="Image of Skillshare class with video list"
-        />
-        <div>
-          <h1 class="title__h1">What Will You Discover?</h1>
-          <hr />
-          <p>
-            Explore new skills, deepen existing passions, and get lost in
-            creativity. What you find just might surprise and inspire you.
-          </p>
-          <a
-            href="https://www.skillshare.com/browse?via=homepage&sort=rating&time=all"
-          >
-            Browse Classes
-          </a>
+        <div class="container-discovercontent">
+          <div class="container-discovercontent__image-container">
+            <img
+              src="images/discoverimage.png"
+              alt="Image of Skillshare class with video list"
+            />
+          </div>
+          <div class="container-textcontent">
+            <h1 class="container-textcontent__title">
+              What Will You Discover?
+            </h1>
+            <hr />
+            <p>
+              Explore new skills, deepen existing passions, and get lost in
+              creativity. What you find just might surprise and inspire you.
+            </p>
+            <a
+              href="https://www.skillshare.com/browse?via=homepage&sort=rating&time=all"
+            >
+              Browse Classes
+            </a>
+          </div>
         </div>
       </section>
 
@@ -178,16 +341,114 @@
           Skillshare teachers are icons, experts, and industry rock stars
           excited to share their experience, wisdom, and trusted tools with you.
         </p>
-        <article class="card__classcreator">
-          <a href="https://www.skillshare.com/user/jessicahische">
-            <img
-              src="images/fotojessicahisch.png"
-              alt="Photo of Jessica Hisch"
-            />
-            <h1>Jessica Hisch</h1>
-            <p>Illustrator</p>
-          </a>
-        </article>
+        <div class="card-list-container">
+          <div class="card-list-wrapper">
+            <ul class="card-list">
+              <li>
+                <a href="https://www.skillshare.com/user/jessicahische">
+                  <article>
+                    <div class="card-list__images">
+                      <img src="images/lacy.png" alt="Photo of Laci Jordan" />
+                    </div>
+                    <div class="card-list__content">
+                      <h1 class="card-list__title card-list__title--large">
+                        Laci Jordan
+                      </h1>
+                      <span
+                        class="card-list__subtitle card-list__subtitle--large"
+                        >Multidisciplinary Artist</span
+                      >
+                    </div>
+                  </article>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.skillshare.com/user/jessicahische">
+                  <article>
+                    <div class="card-list__images">
+                      <img
+                        src="images/fotojessicahisch.png"
+                        alt="Drawing as Self-Discovery image"
+                      />
+                    </div>
+                    <div class="card-list__content">
+                      <h1 class="card-list__title card-list__title--large">
+                        Jessica Hisch
+                      </h1>
+                      <span
+                        class="card-list__subtitle card-list__subtitle--large"
+                        >Illustrator</span
+                      >
+                    </div>
+                  </article>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.skillshare.com/user/jessicahische">
+                  <article>
+                    <div class="card-list__images card-list__title--large">
+                      <img
+                        src="images/aaron.png"
+                        alt="Photo of Aaron Draplin"
+                      />
+                    </div>
+                    <div class="card-list__content">
+                      <h1 class="card-list__title card-list__title--large">
+                        Aaron Draplin
+                      </h1>
+                      <span
+                        class="card-list__subtitle card-list__subtitle--large"
+                        >Designer</span
+                      >
+                    </div>
+                  </article>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.skillshare.com/user/jessicahische">
+                  <article>
+                    <div class="card-list__images card-list__title--large">
+                      <img
+                        src="images/fotojessicahisch.png"
+                        alt="Drawing as Self-Discovery image"
+                      />
+                    </div>
+                    <div class="card-list__content">
+                      <h1 class="card-list__title card-list__title--large">
+                        Jessica Hisch
+                      </h1>
+                      <span
+                        class="card-list__subtitle card-list__subtitle--large"
+                        >Illustrator</span
+                      >
+                    </div>
+                  </article>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.skillshare.com/user/jessicahische">
+                  <article>
+                    <div class="card-list__images card-list__title--large">
+                      <img
+                        src="images/fotojessicahisch.png"
+                        alt="Drawing as Self-Discovery image"
+                      />
+                    </div>
+                    <div class="card-list__content">
+                      <h1 class="card-list__title card-list__title--large">
+                        Jessica Hisch
+                      </h1>
+                      <span
+                        class="card-list__subtitle card-list__subtitle--large"
+                        >Illustrator</span
+                      >
+                    </div>
+                  </article>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <section class="teacherdirectory-section">
@@ -416,31 +677,44 @@
         <div>
           <h1 class="title__footer">Company</h1>
           <ul class="list__company">
-            <li>About</li>
-            <li>Careers</li>
-            <li>Press</li>
-            <li>Blog</li>
-            <li>Affiliates</li>
-            <li>Partnerships</li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Press</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Affiliates</a></li>
+            <li><a href="#">Partnerships</a></li>
           </ul>
         </div>
         <div>
           <h1 class="title__footer">Community</h1>
           <ul class="list__community">
-            <li>Go Premium</li>
-            <li>Team Plans</li>
-            <li>Refer a Friend</li>
-            <li>Gift Cards</li>
-            <li>Scholarships</li>
-            <li>Free Classes</li>
+            <li><a href="#">Go Premium</a></li>
+            <li><a href="#">Team Plans</a></li>
+            <li><a href="#">Refer a Friend</a></li>
+            <li><a href="#">Gift Cards</a></li>
+            <li><a href="#">Scholarships</a></li>
+            <li><a href="#">Free Classes</a></li>
           </ul>
         </div>
         <div>
           <h1 class="title__footer">Teaching</h1>
           <ul class="list__teaching">
-            <li>Become a Teacher</li>
-            <li>Teaching Academy</li>
-            <li>Teacher Handbook</li>
+            <li><a href="#">Become a Teacher</a></li>
+            <li><a href="#">Teaching Academy</a></li>
+            <li><a href="#">Teacher Handbook</a></li>
+          </ul>
+        </div>
+        <div class="wrapper__images-desktop">
+          <h1 class="title__footer mobiletitle">Mobile</h1>
+          <ul class="appstoreimages">
+            <img
+              src="images/googleplay.png"
+              alt="Download button to Google Playstore"
+            />
+            <img
+              src="images/applestore.png"
+              alt="Download button to Apple Store"
+            />
           </ul>
         </div>
       </div>
@@ -451,6 +725,7 @@
         />
         <img src="images/applestore.png" alt="Download button to Apple Store" />
       </div>
+
       <hr />
       <div class="wrapper__lastfooteritems">
         <ul class="wrapper__socials">
@@ -470,18 +745,20 @@
             </a>
           </li>
         </ul>
-        <p>© Skillshare, Inc. 2020</p>
-        <ul class="wrapper__lastfooteritems--links">
-          <li>
-            <a href="https://help.skillshare.com/hc/en-us">Help</a>
-          </li>
-          <li>
-            <a href="https://www.skillshare.com/privacy">Privacy</a>
-          </li>
-          <li>
-            <a href="https://www.skillshare.com/terms">Terms</a>
-          </li>
-        </ul>
+        <div class="wrapper__lastfooteritems--left">
+          <p>© Skillshare, Inc. 2020</p>
+          <ul class="wrapper__lastfooteritems--links">
+            <li>
+              <a href="https://help.skillshare.com/hc/en-us">Help</a>
+            </li>
+            <li>
+              <a href="https://www.skillshare.com/privacy">Privacy</a>
+            </li>
+            <li>
+              <a href="https://www.skillshare.com/terms">Terms</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
     <script src="scripts/script.js"></script>
